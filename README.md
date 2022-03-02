@@ -9,3 +9,4 @@ Rooms of the map can be decorated with different entities or objects including e
 - Zach Montgomery
 - Jahmir Hinds
 - Noah Pelletier
+- Jack Ganger-Spivak
