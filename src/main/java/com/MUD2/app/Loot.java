@@ -7,16 +7,16 @@ public class Loot implements Command {
  * @author Jahmir Hinds
  */
     private PlayerCharacter player;
-    private Item item;
+    private Inventory inventory;
 
     /**
      * Constructor for the loot class
      * @param player the player character
-     * @param item the item that they will pick up
+     * @param inventory the inventory that a player will take the items from.
      */
-    public Loot (PlayerCharacter player, Item item) {
+    public Loot (PlayerCharacter player, Inventory inventory) {
         this.player = player;
-        this.item = item;
+        this.inventory = inventory;
     }
 
     /**

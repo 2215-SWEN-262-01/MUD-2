@@ -11,16 +11,22 @@ public class Move implements Command {
 
     private Tile tile;
     private PlayerCharacter player;
+    private int newx;
+    private int newy;
 
     /**
      * Constructor for the Move Class
      * @param player The player parameter is the character of the player attempting to move.
-     * @param tile is the tile of the map that a player is attempting to move to.
+     * @param tile The tile of the map that a player is attempting to move to.
+     * @param x The x coordinate of the new location that the player is moving to.
+     * @param y The y coordinate of the new location that the player is moving to.
      */
 
-    public Move (PlayerCharacter player, Tile tile) {
+    public Move (PlayerCharacter player, Tile tile, int x, int y) {
         this.player = player;
         this.tile = tile;
+        this.newx = x;
+        this.newy = y;
     }
 
     /**
