@@ -6,5 +6,7 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public class EmptyTile extends Tile{
-    public EmptyTile(){}
+    public EmptyTile(int horizantalLocation, int verticalLocation, GameCharacter character){
+        super(horizantalLocation, verticalLocation, character);
+    }
 }

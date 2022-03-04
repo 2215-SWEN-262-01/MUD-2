@@ -1,5 +1,7 @@
 package com.MUD2.app;
 
+import java.util.List;
+
 /**
  * A Room contains Tiles for different characters to move to and interact
  * with.
@@ -14,10 +16,18 @@ public class Room {
         this.description = description;
     }
 
-    Tile tiles[][];
-    int width;
-    int height;
-    String description;
+    private Tile tiles[][];
+    private int width;
+    private int height;
+    private String description;
+
+    /**
+     * Converts any type of Tile to an EmptyTile
+     */
+    void convertToEmptyTile(int x, int y) { 
+        GameCharacter character = this.tiles[x][y].getCharacter();
+        this.tiles[x][y] = new EmptyTile(x,y,character);
+    }
 
     /**
      * Calculates all the spaces a Character can move to
@@ -25,8 +35,22 @@ public class Room {
      * @param character current Character
      * @return array of tiles
      */
-    Tile[] findAvailableTiles(Character character) {
+    List<Tile> findAvailableTiles(GameCharacter character) {
+        List<Tile> availableTiles;
+        int x = character.getCurrentTile().getHorizantalLocation();
+        int y = character.getCurrentTile().getVerticalLocation();
 
+        //Adding all adjacent tiles to list
+        availableTiles.add(tiles[x+1][y]);
+        availableTiles.add(tiles[x-1][y]);
+        availableTiles.add(tiles[x][y+1]);
+        availableTiles.add(tiles[x][y-1]);
+        availableTiles.add(tiles[x+1][y+1]);
+        availableTiles.add(tiles[x-1][y-1]);
+        availableTiles.add(tiles[x-1][y+1]);
+        availableTiles.add(tiles[x+1][y-1]);
+
+        return availableTiles;
     }
 
     /**
@@ -36,7 +60,8 @@ public class Room {
      * @param tile where the chacter is moving to
      * @return array of tiles
      */
-    void moveCharacter(Character character, Tile tile) {
-
+    void moveCharacter(GameCharacter character, Tile tile) {
+        character.getCurrentTile().removeCharacter();
+        tile.setCharacter(character);
     }
 }

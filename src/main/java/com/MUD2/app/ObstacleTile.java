@@ -7,5 +7,7 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public class ObstacleTile extends Tile{
-    public ObstacleTile(){}
+    public ObstacleTile(int horizantalLocation, int verticalLocation, GameCharacter character){
+        super(horizantalLocation, verticalLocation, character);
+    }
 }
