@@ -1,6 +1,6 @@
 package com.MUD2.app;
 
-public class DropItem implements Command{
+public class DropItem implements Command {
 /**
  * DropItem is a command created so that a player will be able to remove an item from their inventory. 
  * 
@@ -8,11 +8,10 @@ public class DropItem implements Command{
  */
     private PlayerCharacter player;
     private String item;
-
     /**
      * Constructor for the DropItem class
-     * @param player,item The player parameter is the character of the player attempting to drop an item.
-     * item is a string that is the name of the item the player is attempting to drop.
+     * @param player The player parameter is the character of the player attempting to drop an item.
+     * @param item is a string that is the name of the item the player is attempting to drop.
      */
     public DropItem (PlayerCharacter player,String item) {
 
