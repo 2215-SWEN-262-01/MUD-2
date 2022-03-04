@@ -10,8 +10,8 @@ public class Attack implements Command{
     private PlayerCharacter player;
     private NPC target;
     /**
-     * @param player,target The player parameter is the player character that will be making the attack.
-     * the target parameter is the NPC that the player will be attempting to hit.
+     * @param player The player parameter is the player character that will be making the attack.
+     * @param target The target parameter is the NPC that the player will be attempting to hit.
      */
     public Attack (PlayerCharacter player, NPC target) {
 

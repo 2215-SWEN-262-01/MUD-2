@@ -12,8 +12,8 @@ public class Disarm implements Command {
     private Tile tile;
     /**
      * Constructor for Disarm class
-     * @param player,tile The player parameter is a player character and the tile is the
-     * suspected trap tile that the player will attempt to disarm.
+     * @param player The player parameter is a player character.
+     * @param tile The tile is the suspected trap tile that the player will attempt to disarm.
      */
     public Disarm (PlayerCharacter player, Tile tile) {
 
