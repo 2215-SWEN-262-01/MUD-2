@@ -16,7 +16,8 @@ public class Disarm implements Command {
      * @param tile The tile is the suspected trap tile that the player will attempt to disarm.
      */
     public Disarm (PlayerCharacter player, Tile tile) {
-
+        this.player = player;
+        this.tile = tile;
     }
     /**
      * When this method is called it will have a 50 percent chance of removing a trap.

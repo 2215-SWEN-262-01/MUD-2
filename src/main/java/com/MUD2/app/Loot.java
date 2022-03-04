@@ -15,7 +15,8 @@ public class Loot implements Command {
      * @param item the item that they will pick up
      */
     public Loot (PlayerCharacter player, Item item) {
-
+        this.player = player;
+        this.item = item;
     }
 
     /**

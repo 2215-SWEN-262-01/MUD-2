@@ -14,7 +14,8 @@ public class Attack implements Command{
      * @param target The target parameter is the NPC that the player will be attempting to hit.
      */
     public Attack (PlayerCharacter player, NPC target) {
-
+       this.player = player;
+       this.target = target;
     }
     /**
      * This method will carry out the players action of attacking the target.

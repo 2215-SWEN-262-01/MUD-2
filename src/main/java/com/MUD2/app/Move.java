@@ -19,7 +19,8 @@ public class Move implements Command {
      */
 
     public Move (PlayerCharacter player, Tile tile) {
-
+        this.player = player;
+        this.tile = tile;
     }
 
     /**

@@ -15,7 +15,8 @@ public class UseItem implements Command {
     * @param item is a string that is the name of the item the player is attempting to use.
     */
     public UseItem (PlayerCharacter player,String item) {
-
+        this.player = player;
+        this.item = item;
     }
     /**
      * When this method is used the player will attempt to use the selected item.

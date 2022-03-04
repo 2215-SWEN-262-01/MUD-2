@@ -14,7 +14,8 @@ public class DropItem implements Command {
      * @param item is a string that is the name of the item the player is attempting to drop.
      */
     public DropItem (PlayerCharacter player,String item) {
-
+        this.player = player;
+        this.item = item;
     }
     /**
      * When this method is used the selected item will be removed from the player's inventory.
