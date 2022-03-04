@@ -7,5 +7,10 @@ public class Weapon extends Equippable{
 		super(name, description, goldValue);
 		this.attack = attack;
 	}
+	
+	@Override
+	public void equip(PlayerCharacter playerCharacter) {
+		return;
+	}
 
 }

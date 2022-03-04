@@ -8,4 +8,8 @@ public class Armor extends Equippable{
 		this.defense = defense;
 	}
 
+	@Override
+	public void equip(PlayerCharacter playerCharacter) {
+		return;
+	}
 }

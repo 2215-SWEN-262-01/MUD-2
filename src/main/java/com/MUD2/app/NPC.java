@@ -7,7 +7,7 @@ public class NPC extends Character{
 	
 	private boolean isNocturnal;
 
-	protected NPC(String name, String description, int health, int attack, int defense) {
+	protected NPC(String name, String description) {
 		super(name, description, RNG.nextInt(101) + 50, RNG.nextInt(11) + 5, RNG.nextInt(11));
 	}
 	

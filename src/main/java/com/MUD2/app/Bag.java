@@ -9,6 +9,7 @@ public class Bag {
 	
 	public Bag(int capacity) {
 		this.items = new HashSet<>();
+		this.capacity = capacity;
 	}
 	
 	public int getSpace() {
