@@ -12,7 +12,9 @@ public class Inventory {
 	public int getSpace() {
 		int totalSpace = 0;
 		for(Bag bag : bags) {
-			totalSpace += bag.getSpace();
+			if(bag != null) {
+				totalSpace += bag.getSpace();
+			}
 		}
 		return totalSpace;
 	}
