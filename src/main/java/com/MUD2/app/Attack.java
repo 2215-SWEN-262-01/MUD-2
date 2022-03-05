@@ -22,7 +22,7 @@ public class Attack implements Command{
      */
     @Override
     public void execute() {
-
+        player.attack(target);
     }
     
 }
