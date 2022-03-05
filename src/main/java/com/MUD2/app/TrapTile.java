@@ -7,7 +7,10 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public class TrapTile extends Tile {
-    public TrapTile(int attackValue){this.attackValue = attackValue;}
+    public TrapTile(int horizantalLocation, int verticalLocation, GameCharacter character, int attackValue){
+        super(horizantalLocation, verticalLocation, character);
+        this.attackValue = attackValue;
+    }
 
-    int attackValue;
+    private int attackValue;
 }

@@ -7,7 +7,10 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public class ChestTile extends Tile{
-    public ChestTile(Inventory inventory){this.inventory = inventory;}
+    public ChestTile(int horizantalLocation, int verticalLocation, GameCharacter character, Inventory inventory){
+        super(horizantalLocation, verticalLocation, character);
+        this.inventory = inventory;
+    }
     
-    Inventory inventory;
+    private Inventory inventory;
 }

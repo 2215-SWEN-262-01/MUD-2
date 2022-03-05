@@ -7,30 +7,31 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public abstract class Tile {
-    int horizantalLocation;
-    int verticalLocation;
-    Character character;
+    private int horizantalLocation;
+    private int verticalLocation;
+    private GameCharacter character;
+
+    public Tile(int horizantalLocation, int verticalLocation, GameCharacter character) {
+        this.horizantalLocation = horizantalLocation;
+        this.verticalLocation = verticalLocation;
+        this.character = character;
+    }
 
     /**
      * Adds character to a tile if it is not currently occupied
      *
      * @param character
      */
-    void addCharacter(Character character) {
-
-    }
+    void setCharacter(GameCharacter character) {this.character = character;}
     
     /**
      * If the Tile is currently occupied, it will remove its Character
      */
     void removeCharacter() {
-
+        this.setCharacter(null);
     }
 
-    /**
-     * Converts any type of Tile to an EmptyTile
-     */
-    void convertToEmptyTile() { 
-
-    }
+    GameCharacter getCharacter() {return character;}
+    int getHorizantalLocation() {return horizantalLocation;}
+    int getVerticalLocation() {return verticalLocation;}
 }
