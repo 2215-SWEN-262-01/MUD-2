@@ -39,4 +39,8 @@ public class Room {
     void moveCharacter(Character character, Tile tile) {
 
     }
+
+    Tile getTile(int x, int y) {
+        return tiles[x][y];
+    }
 }
