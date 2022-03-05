@@ -1,5 +1,6 @@
 package com.MUD2.app;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -36,7 +37,7 @@ public class Room {
      * @return array of tiles
      */
     List<Tile> findAvailableTiles(GameCharacter character) {
-        List<Tile> availableTiles;
+        LinkedList<Tile> availableTiles = new LinkedList<>();
         int x = character.getCurrentTile().getHorizantalLocation();
         int y = character.getCurrentTile().getVerticalLocation();
 

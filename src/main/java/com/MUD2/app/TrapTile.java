@@ -13,4 +13,8 @@ public class TrapTile extends Tile {
     }
 
     private int attackValue;
+
+    public void springTrap() {
+        character.takeDamage(this.attackValue);
+    }
 }
