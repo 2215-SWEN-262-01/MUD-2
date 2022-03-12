@@ -20,4 +20,8 @@ public class PlayerCharacter extends Character{
 		return inventory;
 	}
 
+	public void equipWeapon(Weapon weapon) { this.currentWeapon = weapon; }
+
+	public void equipArmor(Armor armor) { this.currentArmor = armor; }
+
 }
