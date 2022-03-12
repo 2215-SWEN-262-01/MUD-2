@@ -10,6 +10,6 @@ public class Armor extends Equippable{
 
 	@Override
 	public void equip(PlayerCharacter playerCharacter) {
-		return;
+		playerCharacter.equipArmor(this);
 	}
 }
