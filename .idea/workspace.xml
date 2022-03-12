@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f12bb88-6df9-4b96-ba9c-7ab9993ba4ad" name="Changes" comment="" />
+    <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -19,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="25tiGiHqski5KMkzzF2SAgGv8Yn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +48,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.MUD2.app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -62,6 +84,14 @@
       <updated>1646352690680</updated>
       <workItem from="1646352691954" duration="4163000" />
     </task>
+    <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
+      <created>1647057430515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647057430515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,7 +108,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="inventory" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -96,6 +126,16 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="inventory" />
                 </option>
               </RecentGroup>
@@ -109,5 +149,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Committing project files to keep Git happy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing project files to keep Git happy" />
   </component>
 </project>
