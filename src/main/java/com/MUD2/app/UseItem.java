@@ -7,14 +7,14 @@ public class UseItem implements Command {
 * @author Jahmir Hinds
 */
    private PlayerCharacter player;
-   private String item;
+   private Item item;
 
    /**
     * Constructor for the UseItem class
     * @param player The player parameter is the character of the player attempting to drop an item.
-    * @param item is a string that is the name of the item the player is attempting to use.
+    * @param item is the item the player is attempting to use.
     */
-    public UseItem (PlayerCharacter player,String item) {
+    public UseItem (PlayerCharacter player,Item item) {
         this.player = player;
         this.item = item;
     }
@@ -23,8 +23,11 @@ public class UseItem implements Command {
      */
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
-        
+        if (item instanceof Consumable) {
+            item.use(player);
+        } else {
+            item.equip(player);
+        }
     }
 
 

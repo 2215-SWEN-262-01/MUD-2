@@ -7,13 +7,13 @@ public class DropItem implements Command {
  * @author Jahmir Hinds
  */
     private PlayerCharacter player;
-    private String item;
+    private Item item;
     /**
      * Constructor for the DropItem class
      * @param player The player parameter is the character of the player attempting to drop an item.
-     * @param item is a string that is the name of the item the player is attempting to drop.
+     * @param item is the item the player is attempting to drop.
      */
-    public DropItem (PlayerCharacter player,String item) {
+    public DropItem (PlayerCharacter player,Item item) {
         this.player = player;
         this.item = item;
     }
@@ -22,8 +22,17 @@ public class DropItem implements Command {
      */
     @Override
     public void execute() {
-
-        
+        Inventory temp = player.getInventory();
+        int i = 0;
+        int local;
+        while ( i <=5 ) {
+             int bagCount = 0;
+             if (temp.bags[bagCount].contains(item)) {
+                 local = bagCount;
+             }
+             i++;
+             player.getInventory()[bagCount].removeItem(item);
+        }
     }
     
 }

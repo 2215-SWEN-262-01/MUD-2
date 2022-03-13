@@ -20,12 +20,20 @@ public class Loot implements Command {
     }
 
     /**
-     * WHen used the player will attempt to loot an item.
+     * When used the player will attempt to loot an item.
      */
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
-        
+        Inventory temp = player.getInventory();
+        int i = 0;
+        int open = 0;
+        while ( i <=5 ) {
+            if (temp.bags[i].getSpaces() >= 1) {
+                open = i;
+            }
+            i++;
+        }
+        player.getInventory().bags[open].addItem(item);
     }
     
 }
