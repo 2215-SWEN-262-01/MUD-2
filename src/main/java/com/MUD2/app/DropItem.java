@@ -22,7 +22,7 @@ public class DropItem implements Command {
      */
     @Override
     public void execute() {
-        Inventory temp = player.getInventory();
+        Inventory temp = player.Inventory;
         int i = 0;
         int local;
         while ( i <=5 ) {
@@ -31,7 +31,7 @@ public class DropItem implements Command {
                  local = bagCount;
              }
              i++;
-             player.getInventory()[bagCount].removeItem(item);
+             player.Inventory.bags[bagCount].removeItem(item);
         }
     }
     

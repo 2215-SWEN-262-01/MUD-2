@@ -33,7 +33,7 @@ public class Loot implements Command {
             }
             i++;
         }
-        player.getInventory().bags[open].addItem(item);
+        player.Inventory.bags[open].addItem(item);
     }
     
 }
