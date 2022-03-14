@@ -6,5 +6,5 @@ public abstract class Consumable extends Item{
 		super(name, description, goldValue);
 	}
 	
-	public abstract void use(Character character);
+	public abstract void use(GameCharacter character);
 }
