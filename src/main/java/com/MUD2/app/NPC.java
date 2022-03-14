@@ -2,7 +2,7 @@ package com.MUD2.app;
 
 import java.util.Random;
 
-public class NPC extends Character{
+public class NPC extends GameCharacter{
 	private static final Random RNG = new Random();
 	
 	private boolean isNocturnal;
