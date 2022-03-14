@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
