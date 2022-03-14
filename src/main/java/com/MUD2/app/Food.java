@@ -9,7 +9,7 @@ public class Food extends Consumable{
 	}
 
 	@Override
-	public void use(Character character) {
+	public void use(GameCharacter character) {
 		character.heal(health);	
 	}
 	

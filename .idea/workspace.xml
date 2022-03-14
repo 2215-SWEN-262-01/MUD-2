@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/DropItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/DropItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/UseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/UseItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

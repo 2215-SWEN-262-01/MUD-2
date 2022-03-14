@@ -22,18 +22,19 @@ public class DropItem implements Command {
      */
     @Override
     public void execute() {
-
         Inventory temp = player.getInventory();
-        temp.getSpace();
-
-        int i = 0;
-        int local;
-        while ( i <=5 ) {
-            if (temp.getSpace() >= 1) {
-
-            } else {
-                System.out.println("Your bag is full!");
+        if (temp.getSpace() >= 1) {
+            Bag[] bags = temp.getBags();
+            for (int i = 0; i<bags.length;i++ ) {
+                Item item = bags[i].getItemByName(itemName);
+                if (item != null) {
+                    bags[i].removeItem(item);
+                    break;
+                }
             }
+            System.out.println("Item Not Found");
+        } else {
+            System.out.println("Your bag is full!");
         }
     }
     
