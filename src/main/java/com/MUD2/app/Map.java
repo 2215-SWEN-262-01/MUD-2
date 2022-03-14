@@ -22,7 +22,7 @@ public class Map {
 		}
 		
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");
-		Room[] rooms = new Room[0];
+		Room[] rooms = new Room[1];
 		rooms[0] = room1;
 		return new Map(rooms, rooms[0]);
 	}

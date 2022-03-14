@@ -39,7 +39,6 @@ public class Loot implements Command {
                         checkbag.addItem(item);
                         break;
                     }
-                    else {}
                 }
             }
         }
