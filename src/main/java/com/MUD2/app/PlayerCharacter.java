@@ -9,8 +9,8 @@ public class PlayerCharacter extends GameCharacter{
 	private Weapon currentWeapon;
 	private Armor currentArmor;
 
-	protected PlayerCharacter(String name, String description) {
-		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE);
+	protected PlayerCharacter(String name, String description, Tile tile) {
+		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
 		this.inventory = new Inventory();
 		this.currentArmor = null;
 		this.currentWeapon = null;
