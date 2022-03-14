@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MUD-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Disarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Disarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f12bb88-6df9-4b96-ba9c-7ab9993ba4ad" name="Changes" comment="" />
+      <changelist id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy" />
       <created>1646352690680</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

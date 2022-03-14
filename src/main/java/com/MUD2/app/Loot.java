@@ -1,5 +1,7 @@
 package com.MUD2.app;
 
+import java.util.Iterator;
+
 public class Loot implements Command {
 /**
  * A command that is made whenever a player attempts to loot an item.
@@ -24,6 +26,7 @@ public class Loot implements Command {
      */
     @Override
     public void execute() {
+        Set<Item> itemSet = inventory.
         Inventory temp = player.getInventory();
         int i = 0;
         int open = 0;
@@ -33,7 +36,7 @@ public class Loot implements Command {
             }
             i++;
         }
-        player.Inventory.bags[open].addItem(item);
+        player.inventory.bags[open].addItem(item);
     }
     
 }

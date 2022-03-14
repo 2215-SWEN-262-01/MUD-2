@@ -31,10 +31,13 @@ public class Disarm implements Command {
         Random random = new Random();
         boolean outcome = random.nextBoolean();
         if (outcome == true) {
-            room.converttoempty(x,y);
+            room.convertToEmptyTile(x,y);
         } else {
-            room.getTile(x,y).attack(player);
-            room.converttoempty(x,y);
+            if (room.getTile(x,y) instanceof TrapTile) {
+                ((TrapTile) room.getTile(x,y)).springTrap();
+                room.convertToEmptyTile(x,y);
+            }
+
         }
         
     }
