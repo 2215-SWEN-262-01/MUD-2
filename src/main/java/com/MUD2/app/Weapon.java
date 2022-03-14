@@ -12,5 +12,9 @@ public class Weapon extends Equippable{
 	public void equip(PlayerCharacter playerCharacter) {
 		playerCharacter.equipWeapon(this);
 	}
+	
+	public int getAttack() {
+		return attack;
+	}
 
 }
