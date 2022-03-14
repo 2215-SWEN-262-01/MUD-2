@@ -22,7 +22,7 @@ public class DropItem implements Command {
      */
     @Override
     public void execute() {
-        Inventory temp = player.Inventory;
+        Inventory temp = player.inventory;
         int i = 0;
         int local;
         while ( i <=5 ) {
