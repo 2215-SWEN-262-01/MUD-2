@@ -22,8 +22,10 @@ public class DropItem implements Command {
      */
     @Override
     public void execute() {
+
         Inventory temp = player.getInventory();
         temp.getSpace();
+
         int i = 0;
         int local;
         while ( i <=5 ) {
