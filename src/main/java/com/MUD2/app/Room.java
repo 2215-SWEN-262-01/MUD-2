@@ -69,4 +69,12 @@ public class Room {
     Tile getTile(int x, int y) {
         return tiles[x][y];
     }
+	
+	public int getWidth() {
+		return this.width;
+	}
+	
+	public int getHeight() {
+		return this.height;
+	}
 }

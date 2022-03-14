@@ -26,12 +26,13 @@ public class Loot implements Command {
      */
     @Override
     public void execute() {
+
         Bag[] bags = inventory.getBags();
         Bag bag = bags[0];
         for (Item item : Bag) {
             Inventory inv = player.getInventory();
 
+
         }
     }
-    
 }
