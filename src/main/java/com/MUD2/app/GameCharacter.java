@@ -34,7 +34,7 @@ public class GameCharacter {
     }
 
 
-    public void attack(Character character) {
+    public void attack(GameCharacter character) {
         character.takeDamage(attack);
     }
 

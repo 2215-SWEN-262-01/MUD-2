@@ -17,7 +17,7 @@ public class Map {
 		Tile[][] tilemap = new Tile[5][6];
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 6; j++) {
-				tilemap[i][j] = new Tile(i, j, null);
+				tilemap[i][j] = new EmptyTile(i, j, null);
 			}
 		}
 		

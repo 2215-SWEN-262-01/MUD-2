@@ -2,7 +2,7 @@ package com.MUD2.app;
 import java.util.Scanner;
 
 public class GameInput {
-	public void displayRoom(Room room) {
+	public static void displayRoom(Room room) {
 		for (int y = 0; y < room.getHeight(); y++) {
 			for (int x = 0; x < room.getWidth(); x++) {
 				Tile tile = room.getTile(x, y);
@@ -30,13 +30,14 @@ public class GameInput {
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome to M.U.D");
+		
 		Scanner scanner = new Scanner(System.in);
 		Map map = Map.loadDefaultMap();
+		Room room = map.getCurrentRoom();
+		Tile start = room.getTile(3, 3);
+		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero", start);
 		
-		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero");
-		
-		
-		while (!handleInput(scanner, player)) {
+		while (!handleInput(scanner, player, room)) {
 			displayRoom(map.getCurrentRoom());
 		}
 		System.out.println("Quitting...");
@@ -61,7 +62,7 @@ public class GameInput {
 				System.out.println("\tmove <up/down/left/right>: Moves your character");
 				break;
 			case "move":
-				int x = currentTile.getHorizontalLocation();
+				int x = currentTile.getHorizantalLocation();
 				int y = currentTile.getVerticalLocation();
 				if (command[1].equals("up"))
 					y++;
