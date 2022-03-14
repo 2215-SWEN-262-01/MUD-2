@@ -1,6 +1,7 @@
 package com.MUD2.app;
 
 
+import java.util.LinkedList;
 
 public class Move implements Command {
 /**
@@ -34,9 +35,9 @@ public class Move implements Command {
      */
     @Override
     public void execute() {
-        List<Tile> tiles = room.findAvailableTiles(player);
-        if (tiles.contains(room.getTile(x,y))) {
-            room.moveCharacter(x,y);
+        LinkedList<Tile> tiles = room.findAvailableTiles(player);
+        if (tiles.contains(room.getTile(newx,newy))) {
+            room.moveCharacter(player,newx,newy);
         } else {
             System.out.print("Can't skip spaces!");
         }
