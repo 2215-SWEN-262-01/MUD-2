@@ -10,7 +10,7 @@ public class Weapon extends Equippable{
 	
 	@Override
 	public void equip(PlayerCharacter playerCharacter) {
-		return;
+		playerCharacter.equipWeapon(this);
 	}
 
 }

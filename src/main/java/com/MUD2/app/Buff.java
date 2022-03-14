@@ -9,7 +9,7 @@ public class Buff extends Consumable{
 	}
 
 	@Override
-	public void use(Character character) {
+	public void use(GameCharacter character) {
 		
 	}
 

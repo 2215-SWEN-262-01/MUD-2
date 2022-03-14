@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/DropItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/DropItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/UseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/UseItem.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="inventory" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25tiGiHqski5KMkzzF2SAgGv8Yn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.MUD2.app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.MUD2.app.Main" />
+      <module name="MUD-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.MUD2.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy" />
+      <created>1646352690680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646352690680</updated>
+      <workItem from="1646352691954" duration="4163000" />
+    </task>
+    <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
+      <created>1647057430515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647057430515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="inventory" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Tile-System" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Committing project files to keep Git happy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing project files to keep Git happy" />
+  </component>
+</project>
