@@ -20,8 +20,28 @@ public class PlayerCharacter extends Character{
 		return inventory;
 	}
 
-	public void equipWeapon(Weapon weapon) { this.currentWeapon = weapon; }
+	public void equipWeapon(Weapon weapon) {
+		if(currentWeapon != null) {
+			this.setAttack(this.getAttack() - currentWeapon.getAttack());
+		}
+		this.currentWeapon = weapon; 
+		this.setAttack(this.getAttack() + currentWeapon.getAttack());
+	}
 
-	public void equipArmor(Armor armor) { this.currentArmor = armor; }
+	public void equipArmor(Armor armor) { 
+		if(currentArmor != null) {
+			this.setDefense(this.getDefense() - currentArmor.getDefense());
+		}
+		this.currentArmor = armor; 
+		this.setDefense(this.getDefense() + currentArmor.getDefense());
+	}
+	
+	public Weapon getCurrentWeapon() {
+		return currentWeapon;
+	}
+	
+	public Armor getCurrentArmor() {
+		return currentArmor;
+	}
 
 }
