@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
