@@ -48,8 +48,4 @@ public class Inventory {
 		}
 		return visitor.getEquippableItems();
 	}
-
-	public Bag[] getBags() {
-		return bags;
-	}
 }

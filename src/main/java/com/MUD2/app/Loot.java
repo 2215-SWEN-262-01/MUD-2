@@ -26,7 +26,7 @@ public class Loot implements Command {
      */
     @Override
     public void execute() {
-        Set<Item> itemSet = inventory.
+        //Set<Item> itemSet = inventory.
         Inventory temp = player.getInventory();
         int i = 0;
         int open = 0;

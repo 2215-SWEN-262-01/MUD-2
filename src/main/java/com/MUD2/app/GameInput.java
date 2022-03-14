@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class GameInput {
 	public void displayRoom(Room room) {
-		for (int y = 0; y < room.height; y++) {
-			for (int x = 0; x < room.width; x++) {
+		for (int y = 0; y < room.getHeight(); y++) {
+			for (int x = 0; x < room.getWidth(); x++) {
 				Tile tile = room.getTile(x, y);
 				char tileChar = ' '; //Empty tile
 				
@@ -18,9 +18,9 @@ public class GameInput {
 					tileChar = '=';
 				if (tile instanceof ExitTile)
 					tileChar = '_';
-				if (tile.character instanceof PlayerCharacter)
+				if (tile.getCharacter() instanceof PlayerCharacter)
 					tileChar = '@';
-				if (tile.character instanceof NPC)
+				if (tile.getCharacter() instanceof NPC)
 					tileChar = '!';
 				System.out.print(tileChar);
 			}
@@ -31,13 +31,16 @@ public class GameInput {
 	public static void main(String[] args) {
 		System.out.println("Welcome to M.U.D");
 		Scanner scanner = new Scanner(System.in);
+		Map map = Map.loadDefaultMap();
+		Room room = map.getCurrentRoom();
+		
 		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero");
-		Map map = new Map();
+		
 		
 		while (!handleInput(scanner, player)) {
-			displayRoom(map.getCurrentRoom())
+			displayRoom(map.getCurrentRoom());
 		}
-		System.out.println("Quitting...")
+		System.out.println("Quitting...");
 		scanner.close();
 	}
 	
@@ -51,16 +54,16 @@ public class GameInput {
 		Tile currentTile = player.getCurrentTile();
 		switch (command[0]) {
 			case "quit":
-				return true
+				return true;
 			case "help":
-				System.out.println("Here are the commands that can be entered: ")
-				System.out.println("\tquit: quits the game")
-				System.out.println("\thelp: show this menu")
-				System.out.println()
+				System.out.println("Here are the commands that can be entered: ");
+				System.out.println("\tquit: quits the game");
+				System.out.println("\thelp: show this menu");
+				System.out.println("\tmove <up/down/left/right>: Moves your character");
 				break;
 			case "move":
-				int x = tile.getHorizontalLocation();
-				int y = tile.getVerticalLocation();
+				int x = currentTile.getHorizontalLocation();
+				int y = currentTile.getVerticalLocation();
 				if (command[1].equals("up"))
 					y++;
 				if (command[1].equals("down"))
@@ -69,8 +72,8 @@ public class GameInput {
 					x--;
 				if (command[1].equals("right"))
 					y++;
-				Move move = new Move(player, room, x, y)
+				Move move = new Move(player, room, x, y);
 		}
-		return false
+		return false;
 	}
 }
