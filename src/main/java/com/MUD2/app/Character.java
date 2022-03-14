@@ -1,6 +1,6 @@
 package com.MUD2.app;
 
-public class Character {
+public abstract class Character {
 	
 	private String name;
 	private String description;
@@ -26,6 +26,21 @@ public class Character {
 		return description;
 	}
 	
+	public int getAttack() {
+		return attack;
+	}
+	
+	public int getDefense() {
+		return defense;
+	}
+	
+	public void setAttack(int value) {
+		this.attack = value;
+	}
+	
+	public void setDefense(int value) {
+		this.defense = value;
+	}
 	
 	public void attack(Character character) {
 		character.takeDamage(attack);
@@ -39,6 +54,7 @@ public class Character {
 		health -= damage;
 		if(health < 0) {
 			health = 0;
+			onDefeat();
 		}
 	}
 	
@@ -47,5 +63,14 @@ public class Character {
 		if(health > MAX_HEALTH) {
 			health = MAX_HEALTH;
 		}
+	}
+	
+	private void onDefeat() {
+		return;
+	}
+	
+	@Override
+	public String toString() {
+		return "Character{name=" + name + ", desc=" + description + ", health=" + health + ", attack=" + attack + ", defense=" + defense + "}";
 	}
 }

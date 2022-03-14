@@ -12,4 +12,8 @@ public class Armor extends Equippable{
 	public void equip(PlayerCharacter playerCharacter) {
 		playerCharacter.equipArmor(this);
 	}
+	
+	public int getDefense() {
+		return defense;
+	}
 }
