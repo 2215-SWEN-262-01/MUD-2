@@ -10,4 +10,7 @@ public class ObstacleTile extends Tile{
     public ObstacleTile(int horizantalLocation, int verticalLocation, GameCharacter character){
         super(horizantalLocation, verticalLocation, character);
     }
+    public ObstacleTile(int horizantalLocation, int verticalLocation){
+        super(horizantalLocation, verticalLocation);
+    }
 }

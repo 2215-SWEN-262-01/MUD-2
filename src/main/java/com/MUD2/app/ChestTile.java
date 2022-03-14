@@ -11,6 +11,10 @@ public class ChestTile extends Tile{
         super(horizantalLocation, verticalLocation, character);
         this.inventory = inventory;
     }
+    public ChestTile(int horizantalLocation, int verticalLocation, Inventory inventory){
+        super(horizantalLocation, verticalLocation);
+        this.inventory = inventory;
+    }
     
     private Inventory inventory;
 }

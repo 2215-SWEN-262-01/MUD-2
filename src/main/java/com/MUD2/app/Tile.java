@@ -16,6 +16,11 @@ public abstract class Tile {
         this.verticalLocation = verticalLocation;
         this.character = character;
     }
+    public Tile(int horizantalLocation, int verticalLocation) {
+        this.horizantalLocation = horizantalLocation;
+        this.verticalLocation = verticalLocation;
+        this.character = null;
+    }
 
     /**
      * Adds character to a tile if it is not currently occupied
@@ -29,6 +34,17 @@ public abstract class Tile {
      */
     void removeCharacter() {
         this.setCharacter(null);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Tile) {
+            Tile other = (Tile) obj;
+            return this.horizantalLocation == other.horizantalLocation &&
+                this.verticalLocation == other.verticalLocation &&
+                this.character.equals(other.character);
+        }
+        return false;
     }
 
     GameCharacter getCharacter() {return character;}

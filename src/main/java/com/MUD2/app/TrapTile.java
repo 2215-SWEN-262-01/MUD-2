@@ -12,6 +12,10 @@ public class TrapTile extends Tile {
         this.attackValue = attackValue;
         this.character = character;
     }
+    public TrapTile(int horizantalLocation, int verticalLocation, int attackValue){
+        super(horizantalLocation, verticalLocation);
+        this.attackValue = attackValue;
+    }
 
     private int attackValue;
     private GameCharacter character;

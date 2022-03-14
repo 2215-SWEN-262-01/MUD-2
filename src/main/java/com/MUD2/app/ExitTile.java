@@ -12,6 +12,11 @@ public class ExitTile extends Tile{
         this.startRoom = startRoom;
         this.endRoom = endRoom;
     }
+    public ExitTile(int horizantalLocation, int verticalLocation, Room startRoom, Room endRoom){
+        super(horizantalLocation, verticalLocation);
+        this.startRoom = startRoom;
+        this.endRoom = endRoom;
+    }
 
     private Room startRoom;
     private Room endRoom;

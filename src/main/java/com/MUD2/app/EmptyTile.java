@@ -9,4 +9,7 @@ public class EmptyTile extends Tile{
     public EmptyTile(int horizantalLocation, int verticalLocation, GameCharacter character){
         super(horizantalLocation, verticalLocation, character);
     }
+    public EmptyTile(int horizantalLocation, int verticalLocation){
+        super(horizantalLocation, verticalLocation);
+    }
 }
