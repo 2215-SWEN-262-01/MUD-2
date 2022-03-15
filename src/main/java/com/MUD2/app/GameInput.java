@@ -129,11 +129,12 @@ public class GameInput {
 					System.out.print(item.getName() + ": " + item.getDescription() +
 							", " + item.getGoldValue() +" gold");
 					if (item instanceof Equippable) {
-						System.out.println(" (Equippable)");
+						System.out.print(" (Equippable)");
 					}
 					if (item instanceof Consumable) {
-						System.out.println(" (Consumable)");
+						System.out.print(" (Consumable)");
 					}
+					System.out.println();
 				}
 				System.out.println();
 			}
