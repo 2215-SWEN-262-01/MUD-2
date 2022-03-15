@@ -66,6 +66,8 @@ public class GameInput {
 				System.out.println("\tquit: quits the game");
 				System.out.println("\thelp: show this menu");
 				System.out.println("\t<w/a/s/d>: Moves your character");
+				System.out.println("\tloot: Add items to inventory");
+				System.out.println("\tinventory: Show player inventory");
 				break;
 			case "w":
 				move = new Move(player, room, x, y-1);
@@ -83,6 +85,27 @@ public class GameInput {
 				move = new Move(player, room, x+1, y);
 				move.execute();
 				break;
+			case "loot":
+				if (currentTile instanceof ChestTile) {
+					Loot loot = new Loot(player, ((ChestTile) currentTile).getInventory());
+					loot.execute();
+					room.convertToEmptyTile(x, y);
+				} else {
+					System.out.println("No items to loot here...");
+				}
+				break;
+			case "inventory":
+				Bag[] bags = player.getInventory().getBags();
+				for (int i = 0; i < bags.length; i++) {
+					if (bags[i] != null) {
+						System.out.println("Bag " + i + ": " + bags[i].size() + " items");
+						for (Item item : bags[i]) {
+							System.out.println(item.getName() + ": " + item.getDescription() +
+									", " + item.getGoldValue() +" gold");
+						}
+						System.out.println();
+					}
+				}
 		}
 		return false;
 	}

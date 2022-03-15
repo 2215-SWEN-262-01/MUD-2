@@ -6,41 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Armor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Armor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Buff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Buff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Character.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Consumable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Consumable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/EmptyTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/EmptyTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Equippable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Equippable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/EquippableVistor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/EquippableVistor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ExitTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ExitTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/GameCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/GameCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/InventoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/InventoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/NPC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ObstacleTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ObstacleTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/PlayerCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/PlayerCharacter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/StatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/StatType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TotalGoldVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TotalGoldVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Weapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Weapon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.MUD2.app.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.MUD2.app.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.MUD2.app.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.MUD2.app.AppTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646352690680</updated>
       <workItem from="1646352691954" duration="4163000" />
-      <workItem from="1647308006697" duration="1779000" />
+      <workItem from="1647308006697" duration="4083000" />
     </task>
     <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
       <created>1647057430515</created>

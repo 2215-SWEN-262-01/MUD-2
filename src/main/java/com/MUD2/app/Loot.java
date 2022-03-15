@@ -29,7 +29,7 @@ public class Loot implements Command {
         Bag[] bags = inventory.getBags();
         Bag bag = bags[0];
         Inventory inv = player.getInventory();
-        Bag[] playerBags = inv.getBags();
+        //Bag[] playerBags = inv.getBags();
         for (Item item : bag) {
             if (inv.getSpace() == 0) {
                 System.out.println("Your bag is full!");
@@ -37,6 +37,7 @@ public class Loot implements Command {
                 for ( Bag checkbag : inv.getBags()) {
                     if (checkbag.getSpace() > 0) {
                         checkbag.addItem(item);
+                        System.out.println("Looted " + item.getName());
                         break;
                     }
                 }

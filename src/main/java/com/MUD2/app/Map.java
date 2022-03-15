@@ -3,7 +3,7 @@ package com.MUD2.app;
 public class Map {
 	private Room[] rooms;
 	private Room currentRoom;
-	
+
 	public Map(Room[] rooms, Room currentRoom) {
 		this.rooms = rooms;
 		this.currentRoom = currentRoom;
@@ -11,6 +11,10 @@ public class Map {
 	
 	public Room getCurrentRoom() {
 		return this.currentRoom;
+	}
+
+	public void setCurrentRoom(Room currentRoom) {
+		this.currentRoom = currentRoom;
 	}
 	
 	public static Map loadDefaultMap() {
@@ -20,7 +24,10 @@ public class Map {
 				tilemap[i][j] = new EmptyTile(i, j, null);
 			}
 		}
-		
+		ChestTile chest = new ChestTile(2, 2, null, new Inventory());
+		Weapon sword = new Weapon("Master Sword", "The Blade of Evil's Bane", 50, 10);
+		chest.getInventory().getBags()[0].addItem(sword);
+		tilemap[2][2] = chest;
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");
 		Room[] rooms = new Room[1];
 		rooms[0] = room1;

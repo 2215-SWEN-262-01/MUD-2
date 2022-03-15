@@ -44,20 +44,13 @@ public class Room {
         int[][] offsets = {{1,0}, {-1,0}, {0,1}, {0,-1}, {1, 1}, {-1, -1}, {-1, 1}, {1, -1}};
         for (int[] offset : offsets) {
             try {
-                availableTiles.add(tiles[x+offset[0]][y+offset[1]]);
+                Tile tile = tiles[x+offset[0]][y+offset[1]];
+                if (!(tile instanceof ObstacleTile))
+                    availableTiles.add(tile);
             } catch (IndexOutOfBoundsException e) {
                 //drop tiles out of bounds
             }
         }
-        //Adding all adjacent tiles to list
-        /*availableTiles.add(tiles[x+1][y]);
-        availableTiles.add(tiles[x-1][y]);
-        availableTiles.add(tiles[x][y+1]);
-        availableTiles.add(tiles[x][y-1]);
-        availableTiles.add(tiles[x+1][y+1]);
-        availableTiles.add(tiles[x-1][y-1]);
-        availableTiles.add(tiles[x-1][y+1]);
-        availableTiles.add(tiles[x+1][y-1]);*/
 
         return availableTiles;
     }
