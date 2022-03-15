@@ -7,8 +7,8 @@ public class NPC extends GameCharacter{
 	
 	private boolean isNocturnal;
 
-	protected NPC(String name, String description) {
-		super(name, description, RNG.nextInt(101) + 50, RNG.nextInt(11) + 5, RNG.nextInt(11));
+	protected NPC(String name, String description, Tile tile) {
+		super(name, description, RNG.nextInt(101) + 50, RNG.nextInt(11) + 5, RNG.nextInt(11), tile);
 	}
 	
 	public boolean isNocturnal() {

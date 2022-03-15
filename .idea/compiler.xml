@@ -9,8 +9,5 @@
         <module name="MUD-2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="MUD-2" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
