@@ -29,7 +29,7 @@ public class GameInput {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Welcome to M.U.D");
+		System.out.println("Welcome to M.U.D! Enter help for controls");
 		
 		Scanner scanner = new Scanner(System.in);
 		Map map = Map.loadDefaultMap();
@@ -68,6 +68,7 @@ public class GameInput {
 				System.out.println("\t<w/a/s/d>: Moves your character");
 				System.out.println("\tloot: Add items to inventory");
 				System.out.println("\tinventory: Show player inventory");
+				System.out.println("\tuse: Uses or equips an item");
 				break;
 			case "w":
 				move = new Move(player, room, x, y-1);
@@ -95,18 +96,40 @@ public class GameInput {
 				}
 				break;
 			case "inventory":
-				Bag[] bags = player.getInventory().getBags();
-				for (int i = 0; i < bags.length; i++) {
-					if (bags[i] != null) {
-						System.out.println("Bag " + i + ": " + bags[i].size() + " items");
-						for (Item item : bags[i]) {
-							System.out.println(item.getName() + ": " + item.getDescription() +
-									", " + item.getGoldValue() +" gold");
-						}
-						System.out.println();
-					}
+				displayInventory(player);
+				break;
+			case "use":
+				try {
+					//noinspection Since15
+					String itemName = String.join(" ", command).replace("use ", "");
+					UseItem use = new UseItem(player, itemName);
+					use.execute();
+					System.out.println("Equipped " + itemName);
+				} catch (IndexOutOfBoundsException e) {
+					System.out.println("Please enter the name of the item you want to use");
 				}
+				break;
 		}
 		return false;
+	}
+
+	public static void displayInventory(PlayerCharacter player) {
+		Bag[] bags = player.getInventory().getBags();
+
+		if (player.getCurrentWeapon() != null)
+			System.out.println("Equipped Weapon: " + player.getCurrentWeapon().getName());
+		if (player.getCurrentArmor() != null)
+			System.out.println("Equipped Armor: " + player.getCurrentArmor().getName());
+
+		for (int i = 0; i < bags.length; i++) {
+			if (bags[i] != null) {
+				System.out.println("Bag " + i + ": " + bags[i].size() + " items");
+				for (Item item : bags[i]) {
+					System.out.println(item.getName() + ": " + item.getDescription() +
+							", " + item.getGoldValue() +" gold");
+				}
+				System.out.println();
+			}
+		}
 	}
 }

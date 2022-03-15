@@ -71,4 +71,20 @@ public class GameCharacter {
 	public void setInventory(Inventory inventory) {
 		this.inventory = inventory;
 	}
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
 }
