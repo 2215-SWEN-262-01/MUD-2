@@ -21,11 +21,19 @@ public class PlayerCharacter extends GameCharacter{
 	}
 
 	public void equipWeapon(Weapon weapon) {
-		this.currentWeapon = weapon;
+		if(currentWeapon != null) {
+			this.setAttack(this.getAttack() - currentWeapon.getAttack());
+		}
+		this.currentWeapon = weapon; 
+		this.setAttack(this.getAttack() + currentWeapon.getAttack());
 	}
 
-	public void equipArmor(Armor armor) {
-		this.currentArmor = armor;
+	public void equipArmor(Armor armor) { 
+		if(currentArmor != null) {
+			this.setDefense(this.getDefense() - currentArmor.getDefense());
+		}
+		this.currentArmor = armor; 
+		this.setDefense(this.getDefense() + currentArmor.getDefense());
 	}
 
 	public Weapon getCurrentWeapon() {
