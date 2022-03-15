@@ -13,4 +13,8 @@ public class ChestTile extends Tile{
     }
     
     private Inventory inventory;
+
+    public Inventory getInventory() {
+        return inventory;
+    }
 }

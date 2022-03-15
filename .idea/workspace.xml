@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/TrapTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -55,8 +51,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.MUD2.app.Main" />
+    <configuration name="GameInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.MUD2.app.GameInput" />
       <module name="MUD-2" />
       <extension name="coverage">
         <pattern>
@@ -70,19 +66,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GameInput" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f12bb88-6df9-4b96-ba9c-7ab9993ba4ad" name="Changes" comment="" />
+      <changelist id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy" />
       <created>1646352690680</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646352690680</updated>
       <workItem from="1646352691954" duration="4163000" />
+      <workItem from="1647308006697" duration="7524000" />
+      <workItem from="1647316858571" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
       <created>1647057430515</created>
@@ -108,7 +106,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="UserInput" />
                       </list>
                     </value>
                   </entry>
@@ -124,6 +122,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="UserInput" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="main" />

@@ -8,14 +8,16 @@ public abstract class GameCharacter {
 	private int health;
 	private int attack;
 	private int defense;
+	private Tile currentTile;
 	
-	protected GameCharacter(String name, String description, int maxHealth, int attack, int defense) {
+	protected GameCharacter(String name, String description, int maxHealth, int attack, int defense, Tile currentTile) {
 		this.MAX_HEALTH = maxHealth;
 		this.name = name;
 		this.description = description;
 		this.health = MAX_HEALTH;
 		this.attack = attack;
 		this.defense = defense;
+		this.currentTile = currentTile;
 	}
 	
 	public String getName() {
@@ -43,8 +45,12 @@ public abstract class GameCharacter {
 	}
 	
 	public Tile getCurrentTile() {
-        return null;
+        return currentTile;
     }
+
+	public void setCurrentTile(Tile tile) {
+		this.currentTile = tile;
+	}
 	
 	public void attack(GameCharacter character) {
 		character.takeDamage(attack);
