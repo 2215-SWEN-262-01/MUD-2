@@ -26,8 +26,14 @@ public class Map {
 		}
 		ChestTile chest = new ChestTile(2, 2, null, new Inventory());
 		Weapon sword = new Weapon("Master Sword", "The Blade of Evil's Bane", 50, 10);
-		chest.getInventory().getBags()[0].addItem(sword);
+		Item rock = new Item("Rock", "It's just a rock", 2);
+		Bag bag = chest.getInventory().getBags()[0];
+		bag.addItem(sword);
+		bag.addItem(rock);
 		tilemap[2][2] = chest;
+
+
+
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");
 		Room[] rooms = new Room[1];
 		rooms[0] = room1;

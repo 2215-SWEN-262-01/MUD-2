@@ -67,7 +67,7 @@ public class GameInput {
 				System.out.println("\thelp: show this menu");
 				System.out.println("\t<w/a/s/d>: Moves your character");
 				System.out.println("\tloot: Add items to inventory");
-				System.out.println("\tinventory: Show player inventory");
+				System.out.println("\tinv: Show player inventory");
 				System.out.println("\tuse: Uses or equips an item");
 				break;
 			case "w":
@@ -95,7 +95,7 @@ public class GameInput {
 					System.out.println("No items to loot here...");
 				}
 				break;
-			case "inventory":
+			case "inv":
 				displayInventory(player);
 				break;
 			case "use":
@@ -115,7 +115,8 @@ public class GameInput {
 
 	public static void displayInventory(PlayerCharacter player) {
 		Bag[] bags = player.getInventory().getBags();
-
+		System.out.println("Available Space: " + player.getInventory().getSpace());
+		//System.out.println("Total Gold: " + player.getInventory().getTotalGold());
 		if (player.getCurrentWeapon() != null)
 			System.out.println("Equipped Weapon: " + player.getCurrentWeapon().getName());
 		if (player.getCurrentArmor() != null)
@@ -125,8 +126,14 @@ public class GameInput {
 			if (bags[i] != null) {
 				System.out.println("Bag " + i + ": " + bags[i].size() + " items");
 				for (Item item : bags[i]) {
-					System.out.println(item.getName() + ": " + item.getDescription() +
+					System.out.print(item.getName() + ": " + item.getDescription() +
 							", " + item.getGoldValue() +" gold");
+					if (item instanceof Equippable) {
+						System.out.println(" (Equippable)");
+					}
+					if (item instanceof Consumable) {
+						System.out.println(" (Consumable)");
+					}
 				}
 				System.out.println();
 			}

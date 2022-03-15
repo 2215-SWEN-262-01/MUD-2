@@ -25,6 +25,7 @@ public class Bag implements Iterable<Item> {
 	public void removeItem(Item item) {
 		items.remove(item);
 	}
+
 	public Item getItemByName(String name) {
 		for (Item i : this) {
 			if (i.getName().equals(name)) {
