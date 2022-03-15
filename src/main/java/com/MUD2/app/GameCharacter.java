@@ -59,6 +59,10 @@ public class GameCharacter {
     public Tile getCurrentTile () {
         return tile;
     }
+
+    public void setCurrentTile(Tile tile) {
+        this.tile = tile;
+    }
 	
 	public Inventory getInventory() {
 		return this.inventory;

@@ -36,12 +36,20 @@ public class Move implements Command {
      */
     @Override
     public void execute() {
+        //First check bounds to avoid index out of bounds
+        if (newx >= room.getWidth() || newx < 0) {
+            return;
+        }
+        if (newy >= room.getHeight() || newy < 0) {
+            return;
+        }
+        //Then do check to avoid players skipping spaces
         List<Tile> tiles = room.findAvailableTiles(player);
         if (tiles.contains(room.getTile(newx,newy))) {
 			Tile tile = room.getTile(newx, newy);
             room.moveCharacter(player, tile);
         } else {
-            System.out.print("Can't skip spaces!");
+            System.out.println("Can't skip spaces!");
         }
         
     }

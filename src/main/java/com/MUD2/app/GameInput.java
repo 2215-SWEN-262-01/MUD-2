@@ -6,18 +6,18 @@ public class GameInput {
 		for (int y = 0; y < room.getHeight(); y++) {
 			for (int x = 0; x < room.getWidth(); x++) {
 				Tile tile = room.getTile(x, y);
-				char tileChar = ' '; //Empty tile
+				char tileChar = '_'; //Empty tile
 				
 				if (tile instanceof ObstacleTile)
 					tileChar = '#';
 				if (tile instanceof TrapTile)
-					tileChar = ' '; //looks identical to empty
+					tileChar = '_'; //looks identical to empty
 				//Might be a good idea to keep track of whether trap is sprung, 
 				//then change it to look different afterwards
 				if (tile instanceof ChestTile)
 					tileChar = '=';
 				if (tile instanceof ExitTile)
-					tileChar = '_';
+					tileChar = 'D';
 				if (tile.getCharacter() instanceof PlayerCharacter)
 					tileChar = '@';
 				if (tile.getCharacter() instanceof NPC)
@@ -35,9 +35,12 @@ public class GameInput {
 		Map map = Map.loadDefaultMap();
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(3, 3);
+		assert(start != null);
 		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero", start);
-		
-		while (!handleInput(scanner, player, room)) {
+		start.setCharacter(player);
+		displayRoom(room);
+
+		while (!handleInput(scanner, player, map.getCurrentRoom())) {
 			displayRoom(map.getCurrentRoom());
 		}
 		System.out.println("Quitting...");
@@ -52,6 +55,9 @@ public class GameInput {
 		System.out.print(": ");
 		String[] command = input.nextLine().split(" ");
 		Tile currentTile = player.getCurrentTile();
+		int x = currentTile.getHorizantalLocation();
+		int y = currentTile.getVerticalLocation();
+		Move move;
 		switch (command[0]) {
 			case "quit":
 				return true;
@@ -59,20 +65,24 @@ public class GameInput {
 				System.out.println("Here are the commands that can be entered: ");
 				System.out.println("\tquit: quits the game");
 				System.out.println("\thelp: show this menu");
-				System.out.println("\tmove <up/down/left/right>: Moves your character");
+				System.out.println("\t<w/a/s/d>: Moves your character");
 				break;
-			case "move":
-				int x = currentTile.getHorizantalLocation();
-				int y = currentTile.getVerticalLocation();
-				if (command[1].equals("up"))
-					y++;
-				if (command[1].equals("down"))
-					y--;
-				if (command[1].equals("left"))
-					x--;
-				if (command[1].equals("right"))
-					y++;
-				Move move = new Move(player, room, x, y);
+			case "w":
+				move = new Move(player, room, x, y-1);
+				move.execute();
+				break;
+			case "a":
+				move = new Move(player, room, x-1, y);
+				move.execute();
+				break;
+			case "s":
+				move = new Move(player, room, x, y+1);
+				move.execute();
+				break;
+			case "d":
+				move = new Move(player, room, x+1, y);
+				move.execute();
+				break;
 		}
 		return false;
 	}
