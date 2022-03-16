@@ -26,17 +26,22 @@ public class Loot implements Command {
      */
     @Override
     public void execute() {
-        Set<Item> itemSet = inventory.
-        Inventory temp = player.getInventory();
-        int i = 0;
-        int open = 0;
-        while ( i <=5 ) {
-            if (temp.bags[i].getSpaces() >= 1) {
-                open = i;
+        Bag[] bags = inventory.getBags();
+        Bag bag = bags[0];
+        Inventory inv = player.getInventory();
+        //Bag[] playerBags = inv.getBags();
+        for (Item item : bag) {
+            if (inv.getSpace() == 0) {
+                System.out.println("Your bag is full!");
+            } else {
+                for ( Bag checkbag : inv.getBags()) {
+                    if (checkbag.getSpace() > 0) {
+                        checkbag.addItem(item);
+                        System.out.println("Looted " + item.getName());
+                        break;
+                    }
+                }
             }
-            i++;
         }
-        player.inventory.bags[open].addItem(item);
     }
-    
 }

@@ -37,25 +37,26 @@ public class Room {
      * @return array of tiles
      */
     List<Tile> findAvailableTiles(GameCharacter character) {
+
         LinkedList<Tile> availableTiles = new LinkedList<>();
         int x = character.getCurrentTile().getHorizantalLocation();
         int y = character.getCurrentTile().getVerticalLocation();
-
-        //Adding all adjacent tiles to list
-        availableTiles.add(tiles[x+1][y]);
-        availableTiles.add(tiles[x-1][y]);
-        availableTiles.add(tiles[x][y+1]);
-        availableTiles.add(tiles[x][y-1]);
-        availableTiles.add(tiles[x+1][y+1]);
-        availableTiles.add(tiles[x-1][y-1]);
-        availableTiles.add(tiles[x-1][y+1]);
-        availableTiles.add(tiles[x+1][y-1]);
+        int[][] offsets = {{1,0}, {-1,0}, {0,1}, {0,-1}, {1, 1}, {-1, -1}, {-1, 1}, {1, -1}};
+        for (int[] offset : offsets) {
+            try {
+                Tile tile = tiles[x+offset[0]][y+offset[1]];
+                if (!(tile instanceof ObstacleTile))
+                    availableTiles.add(tile);
+            } catch (IndexOutOfBoundsException e) {
+                //drop tiles out of bounds
+            }
+        }
 
         return availableTiles;
     }
 
     /**
-     * Calculates all the spaces a Character can move to
+     * Moves the character onto a given tile
      *
      * @param character current Character
      * @param tile where the chacter is moving to
@@ -64,9 +65,24 @@ public class Room {
     void moveCharacter(GameCharacter character, Tile tile) {
         character.getCurrentTile().removeCharacter();
         tile.setCharacter(character);
+        character.setCurrentTile(tile);
     }
 
     Tile getTile(int x, int y) {
-        return tiles[x][y];
+        try {
+            return tiles[x][y];
+        } catch (IndexOutOfBoundsException e) {
+            //Sanity checking for room bounds
+            return null;
+        }
+
     }
+	
+	public int getWidth() {
+		return this.width;
+	}
+	
+	public int getHeight() {
+		return this.height;
+	}
 }
