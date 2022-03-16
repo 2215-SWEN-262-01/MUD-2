@@ -14,7 +14,7 @@ public class ExitTile extends Tile{
     }
 	
 	public Room getEndRoom() {
-		return this.endRoom;
+		return room.endRoom;
 	}
 	
     private Room startRoom;

@@ -12,6 +12,7 @@ public class Move implements Command {
  */
 
     private Room room;
+	private Map map;
     private PlayerCharacter player;
     private int newx;
     private int newy;
@@ -24,9 +25,10 @@ public class Move implements Command {
      * @param y The y coordinate of the new location that the player is moving to.
      */
 
-    public Move (PlayerCharacter player, Room room, int x, int y) {
+    public Move (PlayerCharacter player, Room room, Map map, int x, int y) {
         this.player = player;
         this.room = room;
+		this.map = map;
         this.newx = x;
         this.newy = y;
     }
@@ -47,8 +49,13 @@ public class Move implements Command {
         List<Tile> tiles = room.findAvailableTiles(player);
         if (tiles.contains(room.getTile(newx,newy))) {
 			Tile tile = room.getTile(newx, newy);
+			if (tile instanceof ExitTile) {
+				ExitTile exit = (ExitTile) tile;
+				map.setCurrentRoom(exit.getEndRoom());
+				
+			}
 			if (tile.getCharacter() != null) {
-				Attack attack = new Attack(player, tile.getCharacter());
+				Attack attack = new Attack(player, tile.getCharacter(), room);
 				attack.execute();
 				return;
 			}

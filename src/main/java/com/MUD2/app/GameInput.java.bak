@@ -47,7 +47,7 @@ public class GameInput {
 		start.setCharacter(player);
 		displayRoom(room);
 
-		while (!handleInput(scanner, player, map.getCurrentRoom())) {
+		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
 			displayRoom(map.getCurrentRoom());
 		}
 		System.out.println("Quitting...");
@@ -58,8 +58,8 @@ public class GameInput {
 	* Parses and handles one line of user input
 	* @return whether the user quit or lost the game
 	*/
-	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room) {
-		if (player.getGameOver())
+	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room, Map map) {
+		if (player.getDefeated())
 			return true;
 		System.out.print(": ");
 		String[] command = input.nextLine().split(" ");

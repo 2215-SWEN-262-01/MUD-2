@@ -47,7 +47,7 @@ public class GameInput {
 		start.setCharacter(player);
 		displayRoom(room);
 
-		while (!handleInput(scanner, player, map.getCurrentRoom())) {
+		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
 			displayRoom(map.getCurrentRoom());
 		}
 		System.out.println("Quitting...");
@@ -58,7 +58,7 @@ public class GameInput {
 	* Parses and handles one line of user input
 	* @return whether the user quit or lost the game
 	*/
-	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room) {
+	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room, Map map) {
 		if (player.getDefeated())
 			return true;
 		System.out.print(": ");
@@ -81,19 +81,19 @@ public class GameInput {
 				System.out.println("\tstats: Shows player stats");
 				break;
 			case "w":
-				move = new Move(player, room, x, y-1);
+				move = new Move(player, room, map, x, y-1);
 				move.execute();
 				break;
 			case "a":
-				move = new Move(player, room, x-1, y);
+				move = new Move(player, room, map, x-1, y);
 				move.execute();
 				break;
 			case "s":
-				move = new Move(player, room, x, y+1);
+				move = new Move(player, room, map, x, y+1);
 				move.execute();
 				break;
 			case "d":
-				move = new Move(player, room, x+1, y);
+				move = new Move(player, room, map, x+1, y);
 				move.execute();
 				break;
 			case "loot":
