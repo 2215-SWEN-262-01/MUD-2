@@ -63,7 +63,7 @@ public class Room {
      * @return array of tiles
      */
     void moveCharacter(GameCharacter character, Tile tile) {
-		//Fix for phantom character created when switching tile type before a move
+		//Fix for phantom character created when switching tile type underneath a player
 		int x = character.getCurrentTile().getHorizantalLocation();
 		int y = character.getCurrentTile().getVerticalLocation();
 		getTile(x, y).removeCharacter();
@@ -81,8 +81,16 @@ public class Room {
             //Sanity checking for room bounds
             return null;
         }
-
     }
+	
+	public void setTile(int x, int y, Tile tile) {
+		try {
+            tiles[x][y] = tile;
+        } catch (IndexOutOfBoundsException e) {
+            //Sanity checking for room bounds
+            System.out.err("Attempted to set out of bounds tile at " + x + ", " + y + "!");
+        }
+	}
 	
 	public int getWidth() {
 		return this.width;

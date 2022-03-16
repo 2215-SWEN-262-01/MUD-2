@@ -34,7 +34,7 @@ public class Map {
 		tilemap[2][2] = chest;
 
 		NPC enemy = new NPC("Gerblin", "A common foe", tilemap[4][4]);
-		tilemap[4][4]
+		tilemap[4][4].setCharacter(enemy);
 
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");
 		Room[] rooms = new Room[1];

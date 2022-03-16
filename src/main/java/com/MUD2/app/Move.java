@@ -48,7 +48,7 @@ public class Move implements Command {
         if (tiles.contains(room.getTile(newx,newy))) {
 			Tile tile = room.getTile(newx, newy);
 			if (tile.getCharacter() != null) {
-				Attack attack = new Attack(player, tile.getCharacter());
+				Attack attack = new Attack(player, tile.getCharacter(), room);
 				attack.execute();
 				return;
 			}

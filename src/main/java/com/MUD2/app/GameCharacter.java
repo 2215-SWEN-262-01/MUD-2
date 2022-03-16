@@ -8,6 +8,8 @@ public abstract class GameCharacter {
 	private int health;
 	private int attack;
 	private int defense;
+	private Inventory inventory;
+	private boolean defeated;
 	private Tile currentTile;
 	
 	protected GameCharacter(String name, String description, int maxHealth, int attack, int defense, Tile currentTile) {
@@ -17,7 +19,21 @@ public abstract class GameCharacter {
 		this.health = MAX_HEALTH;
 		this.attack = attack;
 		this.defense = defense;
+		this.inventory = new Inventory();
+		this.defeated = false;
 		this.currentTile = currentTile;
+	}
+	
+	public boolean getDefeated() {
+		return this.defeated;
+	}
+	
+	public void setDefeated(boolean defeated) {
+		this.defeated = defeated;
+	}
+	
+	public Inventory getInventory() {
+		return inventory;
 	}
 	
 	public String getName() {
@@ -89,6 +105,7 @@ public abstract class GameCharacter {
 	}
 	
 	protected void onDefeat() {
+		this.defeated = true;
 		System.out.println(this.name + " has been defeated!");
 		this.currentTile.removeCharacter();
 		return;

@@ -34,6 +34,8 @@ public class Map {
 		tilemap[2][2] = chest;
 
 		NPC enemy = new NPC("Gerblin", "A common foe", tilemap[4][4]);
+		Item gem = new Item("Ruby", "A shiny and valuable gem", 30);
+		enemy.getInventory().getBags()[0].addItem(gem);
 		tilemap[4][4].setCharacter(enemy);
 
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");

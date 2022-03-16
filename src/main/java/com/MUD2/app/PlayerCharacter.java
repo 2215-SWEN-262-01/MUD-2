@@ -5,21 +5,14 @@ public class PlayerCharacter extends GameCharacter{
 	public static final int DEFAULT_ATTACK = 10;
 	public static final int DEFAULT_DEFENSE = 0;
 	
-	private Inventory inventory;
 	private Weapon currentWeapon;
 	private Armor currentArmor;
-	private boolean gameOver;
+	
 
 	protected PlayerCharacter(String name, String description, Tile tile) {
 		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
-		this.inventory = new Inventory();
 		this.currentArmor = null;
 		this.currentWeapon = null;
-		this.gameOver = false;
-	}
-
-	public Inventory getInventory() {
-		return inventory;
 	}
 
 	public void equipWeapon(Weapon weapon) {
@@ -46,13 +39,9 @@ public class PlayerCharacter extends GameCharacter{
 		return currentArmor;
 	}
 	
-	public boolean getGameOver() {
-		return this.gameOver;
-	}
-	
 	@Override
 	protected void onDefeat() {
-		this.gameOver = true;
+		this.setDefeated(true);
 		System.out.println("You died! Game over...");
 		return;
 	}

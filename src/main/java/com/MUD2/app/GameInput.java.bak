@@ -56,7 +56,7 @@ public class GameInput {
 	
 	/**
 	* Parses and handles one line of user input
-	* @return whether the user quit
+	* @return whether the user quit or lost the game
 	*/
 	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room) {
 		if (player.getGameOver())
@@ -77,7 +77,7 @@ public class GameInput {
 				System.out.println("\t<w/a/s/d>: Moves your character");
 				System.out.println("\tloot: Add items to inventory");
 				System.out.println("\tinv: Show player inventory");
-				System.out.println("\tuse: Uses or equips an item");
+				System.out.println("\tuse <item name>: Uses or equips an item");
 				System.out.println("\tstats: Shows player stats");
 				break;
 			case "w":

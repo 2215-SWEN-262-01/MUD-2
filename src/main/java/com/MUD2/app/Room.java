@@ -81,8 +81,16 @@ public class Room {
             //Sanity checking for room bounds
             return null;
         }
-
     }
+	
+	public void setTile(int x, int y, Tile tile) {
+		try {
+            tiles[x][y] = tile;
+        } catch (IndexOutOfBoundsException e) {
+            //Sanity checking for room bounds
+            System.err.println("Attempted to set out of bounds tile at " + x + ", " + y + "!");
+        }
+	}
 	
 	public int getWidth() {
 		return this.width;
