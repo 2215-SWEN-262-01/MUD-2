@@ -28,7 +28,7 @@ public class Bag implements Iterable<Item> {
 
 	public Item getItemByName(String name) {
 		for (Item i : this) {
-			if (i.getName().equalsIgnoreCase(name)) {
+			if (i.getName().equals(name)) {
 				return i;
 			}
 		}

@@ -42,7 +42,6 @@ public class UseItem implements Command {
                             return;
                         } else {
 							System.out.println("Item not usable");
-							return;
 						}
                     }
                 }

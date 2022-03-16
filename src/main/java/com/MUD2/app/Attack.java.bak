@@ -27,11 +27,8 @@ public class Attack implements Command{
 		System.out.println("You attack the " + target.getName() + " for " + damage + " damage.");
 		System.out.println("The " + target.getName() + " has " + target.getHealth() + " health remaining.");
 		damage = target.attack(player);
-		if (!player.getGameOver()) {
-			System.out.println("The " + target.getName() + " counter-attacks you for " + damage + " damage.");
-			System.out.println("You have " + player.getHealth() + " health remaining.");
-		}
-		
+		System.out.println("The " + target.getName() + " counter-attacks you for " + damage + " damage.");
+		System.out.println("You have " + player.getHealth() + " health remaining.");
     }
     
 }

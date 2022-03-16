@@ -49,7 +49,6 @@ public class Move implements Command {
 			Tile tile = room.getTile(newx, newy);
 			if (tile.getCharacter() != null) {
 				Attack attack = new Attack(player, tile.getCharacter());
-				attack.execute();
 				return;
 			}
             room.moveCharacter(player, tile);

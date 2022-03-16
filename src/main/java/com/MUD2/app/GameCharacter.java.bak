@@ -57,7 +57,7 @@ public abstract class GameCharacter {
 	}
 	
 	public int getMaxHealth() {
-		return this.MAX_HEALTH;
+		return this.maxHealth;
 	}
 	
 	public int attack(GameCharacter character) {
