@@ -49,6 +49,10 @@ public class Map {
 			}
 		}
 		
+		ChestTile chest2 = new ChestTile(1, 1, null, new Inventory());
+		Weapon bread_weapon = new Weapon("Bread Sword", "The finest blade cut from weapons-grade bread", 10, 5);
+		chest2.getInventory().getBags()[0].addItem(bread_weapon);
+		tilemap2[1][1] = chest2;
 		Room room2 = new Room(tilemap, 3, 3, "A small room");
 		
 		Room[] rooms = new Room[2];

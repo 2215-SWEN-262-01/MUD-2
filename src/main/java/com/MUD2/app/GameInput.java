@@ -78,7 +78,14 @@ public class GameInput {
 				System.out.println("\tloot: Add items to inventory");
 				System.out.println("\tinv: Show player inventory");
 				System.out.println("\tuse <item name>: Uses or equips an item");
-				System.out.println("\tstats: Shows player stats");
+				System.out.println("\tstats: Shows player stats\n");
+				System.out.println("Map Key: ");
+				System.out.println("\t@: Player");
+				System.out.println("\t_: Empty Space");
+				System.out.println("\t=: Chest");
+				System.out.println("\t!: Enemy");
+				System.out.println("\tD: Room Exit");
+				System.out.println("\t#: Obstacle");
 				break;
 			case "w":
 				move = new Move(player, room, map, x, y-1);
