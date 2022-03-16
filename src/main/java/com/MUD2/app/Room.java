@@ -63,7 +63,13 @@ public class Room {
      * @return array of tiles
      */
     void moveCharacter(GameCharacter character, Tile tile) {
+		//Fix for phantom character created when switching tile type underneath a player
+		int x = character.getCurrentTile().getHorizantalLocation();
+		int y = character.getCurrentTile().getVerticalLocation();
+		getTile(x, y).removeCharacter();
+		
         character.getCurrentTile().removeCharacter();
+		
         tile.setCharacter(character);
         character.setCurrentTile(tile);
     }

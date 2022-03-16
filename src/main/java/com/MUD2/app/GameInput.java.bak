@@ -1,7 +1,15 @@
 package com.MUD2.app;
 import java.util.Scanner;
 
+/**
+ * Class to conduct console input for the player to control the game in a loop. Serves as the application entry point
+ * @author Jack Ganger-Spivak
+ */
 public class GameInput {
+	/**
+	 * Prints out an ASCII representation of the current room
+	 * @param room The room to display
+	 */
 	public static void displayRoom(Room room) {
 		for (int y = 0; y < room.getHeight(); y++) {
 			for (int x = 0; x < room.getWidth(); x++) {
@@ -35,8 +43,7 @@ public class GameInput {
 		Map map = Map.loadDefaultMap();
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(3, 3);
-		assert(start != null);
-		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero", start);
+		PlayerCharacter player = new PlayerCharacter("Player", "The Hero", start);
 		start.setCharacter(player);
 		displayRoom(room);
 
@@ -114,12 +121,18 @@ public class GameInput {
 				break;
 			case "stats":
 				System.out.println("Player Stats:");
-				System.out.println("Health:" + player.getHealth() + "/" + player.getMaxHealth());
+				System.out.println("Health: " + player.getHealth() + "/" + player.getMaxHealth());
+				System.out.println("Attack: " + player.getAttack());
+				System.out.println("Defense: " + player.getDefense());
 				break;
 		}
 		return false;
 	}
-
+	
+	/**
+	 * Displays the player's current inventory and equipped items
+	 * @param player the player to show the inventory of
+	 */
 	public static void displayInventory(PlayerCharacter player) {
 		Bag[] bags = player.getInventory().getBags();
 		System.out.println("Available Space: " + player.getInventory().getSpace());

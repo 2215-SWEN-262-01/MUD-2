@@ -1,7 +1,15 @@
 package com.MUD2.app;
 import java.util.Scanner;
 
+/**
+ * Class to conduct console input for the player to control the game in a loop. Serves as the application entry point
+ * @author Jack Ganger-Spivak
+ */
 public class GameInput {
+	/**
+	 * Prints out an ASCII representation of the current room
+	 * @param room The room to display
+	 */
 	public static void displayRoom(Room room) {
 		for (int y = 0; y < room.getHeight(); y++) {
 			for (int x = 0; x < room.getWidth(); x++) {
@@ -35,8 +43,7 @@ public class GameInput {
 		Map map = Map.loadDefaultMap();
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(3, 3);
-		assert(start != null);
-		PlayerCharacter player = new PlayerCharacter("Lonk", "The Hero", start);
+		PlayerCharacter player = new PlayerCharacter("Player", "The Hero", start);
 		start.setCharacter(player);
 		displayRoom(room);
 
@@ -49,7 +56,7 @@ public class GameInput {
 	
 	/**
 	* Parses and handles one line of user input
-	* @return whether the user quit
+	* @return whether the user quit or lost the game
 	*/
 	public static boolean handleInput(Scanner input, PlayerCharacter player, Room room) {
 		if (player.getGameOver())
@@ -121,7 +128,11 @@ public class GameInput {
 		}
 		return false;
 	}
-
+	
+	/**
+	 * Displays the player's current inventory and equipped items
+	 * @param player the player to show the inventory of
+	 */
 	public static void displayInventory(PlayerCharacter player) {
 		Bag[] bags = player.getInventory().getBags();
 		System.out.println("Available Space: " + player.getInventory().getSpace());
