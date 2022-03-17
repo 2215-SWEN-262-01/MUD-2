@@ -1,1 +1,8 @@
+com\MUD2\app\GameInput.class
+com\MUD2\app\UseItem.class
+com\MUD2\app\DropItem.class
+com\MUD2\app\Attack.class
 com\MUD2\app\Command.class
+com\MUD2\app\Move.class
+com\MUD2\app\Loot.class
+com\MUD2\app\Disarm.class

@@ -26,15 +26,19 @@ public class UseItem implements Command {
         Inventory temp = player.getInventory();
             Bag[] bags = temp.getBags();
             for (int i = 0; i<bags.length;i++ ) {
-                Item item = bags[i].getItemByName(itemName);
-                if (item != null) {
-                    if (item instanceof Equippable) {
-                        ((Equippable) item).equip(player);
-                    } else {
-                        ((Consumable) item).use(player);
-                        bags[i].removeItem(item);
+                if (bags[i] != null) {
+                    Item item = bags[i].getItemByName(itemName);
+                    if (item != null) {
+                        if (item instanceof Equippable) {
+                            ((Equippable) item).equip(player);
+                            bags[i].removeItem(item);
+                            return;
+                        } else {
+                            ((Consumable) item).use(player);
+                            bags[i].removeItem(item);
+                            return;
+                        }
                     }
-                    break;
                 }
             }
             System.out.println("Item Not Found");

@@ -34,7 +34,7 @@ public class GameCharacter {
     }
 
 
-    public void attack(Character character) {
+    public void attack(GameCharacter character) {
         character.takeDamage(attack);
     }
 
@@ -59,6 +59,10 @@ public class GameCharacter {
     public Tile getCurrentTile () {
         return tile;
     }
+
+    public void setCurrentTile(Tile tile) {
+        this.tile = tile;
+    }
 	
 	public Inventory getInventory() {
 		return this.inventory;
@@ -67,4 +71,20 @@ public class GameCharacter {
 	public void setInventory(Inventory inventory) {
 		this.inventory = inventory;
 	}
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
 }

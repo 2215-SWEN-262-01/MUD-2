@@ -2,6 +2,7 @@ package com.MUD2.app;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Objects;
 import java.util.Set;
 
 public class Bag implements Iterable<Item> {
@@ -24,11 +25,10 @@ public class Bag implements Iterable<Item> {
 	public void removeItem(Item item) {
 		items.remove(item);
 	}
+
 	public Item getItemByName(String name) {
-		Iterator<Item> items = iterator();
-		while(items.hasNext()) {
-			Item i = items.next();
-			if(i.getName() == name) {
+		for (Item i : this) {
+			if (i.getName().equals(name)) {
 				return i;
 			}
 		}
@@ -37,5 +37,9 @@ public class Bag implements Iterable<Item> {
 	@Override
 	public Iterator<Item> iterator() {
 		return items.iterator();
+	}
+
+	public int size() {
+		return items.size();
 	}
 }
