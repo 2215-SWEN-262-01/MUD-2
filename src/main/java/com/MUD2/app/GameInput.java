@@ -143,7 +143,7 @@ public class GameInput {
 	public static void displayInventory(PlayerCharacter player) {
 		Bag[] bags = player.getInventory().getBags();
 		System.out.println("Available Space: " + player.getInventory().getSpace());
-		//System.out.println("Total Gold: " + player.getInventory().getTotalGold());
+		System.out.println("Total Gold: " + player.getInventory().getTotalGold());
 		if (player.getCurrentWeapon() != null)
 			System.out.println("Equipped Weapon: " + player.getCurrentWeapon().getName());
 		if (player.getCurrentArmor() != null)
@@ -153,7 +153,7 @@ public class GameInput {
 			if (bags[i] != null) {
 				System.out.println("Bag " + i + ": " + bags[i].size() + " items");
 				for (Item item : bags[i]) {
-					System.out.print(item.getName() + ": " + item.getDescription() +
+					System.out.print("\t"+item.getName() + ": " + item.getDescription() +
 							", " + item.getGoldValue() +" gold");
 					if (item instanceof Equippable) {
 						System.out.print(" (Equippable)");

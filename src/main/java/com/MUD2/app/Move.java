@@ -60,6 +60,7 @@ public class Move implements Command {
 				attack.execute();
 				return;
 			}
+
             room.moveCharacter(player, tile);
         } else {
             System.out.println("Can't skip spaces!");
