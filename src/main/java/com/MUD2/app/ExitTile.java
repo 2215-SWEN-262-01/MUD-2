@@ -7,16 +7,24 @@ package com.MUD2.app;
  * @author Peyton Martin
  */
 public class ExitTile extends Tile{
-    public ExitTile(int horizantalLocation, int verticalLocation, GameCharacter character, Room startRoom, Room endRoom){
+
+
+    public ExitTile(int horizantalLocation, int verticalLocation, GameCharacter character, Room endRoom){
         super(horizantalLocation, verticalLocation, character);
-        this.startRoom = startRoom;
         this.endRoom = endRoom;
+        this.otherExit = null;
     }
 	
 	public Room getEndRoom() {
 		return this.endRoom;
 	}
-	
-    private Room startRoom;
+
+    public ExitTile getOtherExit() { return this.otherExit; }
+
+    public void setOtherExit(ExitTile otherExit) {
+        this.otherExit = otherExit;
+    }
+
     private Room endRoom;
+    private ExitTile otherExit;
 }

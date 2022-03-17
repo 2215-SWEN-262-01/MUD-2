@@ -52,6 +52,8 @@ public class Move implements Command {
 			if (tile instanceof ExitTile) {
 				ExitTile exit = (ExitTile) tile;
 				map.setCurrentRoom(exit.getEndRoom());
+                //player.setCurrentTile(exit);
+                tile = exit.getOtherExit();
 			}
 			if (tile.getCharacter() != null) {
 				Attack attack = new Attack(player, tile.getCharacter(), room);

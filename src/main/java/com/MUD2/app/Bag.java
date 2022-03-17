@@ -2,7 +2,6 @@ package com.MUD2.app;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Objects;
 import java.util.Set;
 
 public class Bag implements Iterable<Item> {

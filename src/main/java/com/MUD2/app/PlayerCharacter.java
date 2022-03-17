@@ -18,6 +18,7 @@ public class PlayerCharacter extends GameCharacter{
 	public void equipWeapon(Weapon weapon) {
 		if(currentWeapon != null) {
 			this.setAttack(this.getAttack() - currentWeapon.getAttack());
+
 		}
 		this.currentWeapon = weapon; 
 		this.setAttack(this.getAttack() + currentWeapon.getAttack());

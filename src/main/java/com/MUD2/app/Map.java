@@ -53,8 +53,15 @@ public class Map {
 		Weapon bread_weapon = new Weapon("Bread Sword", "The finest blade cut from weapons-grade bread", 10, 5);
 		chest2.getInventory().getBags()[0].addItem(bread_weapon);
 		tilemap2[1][1] = chest2;
-		Room room2 = new Room(tilemap, 3, 3, "A small room");
-		
+		Room room2 = new Room(tilemap2, 3, 3, "A small room");
+
+		ExitTile exit_1_2 = new ExitTile(0, 3, null, room2);
+		ExitTile exit_2_1 = new ExitTile(2, 2, null, room1);
+		exit_1_2.setOtherExit(exit_2_1);
+		exit_2_1.setOtherExit(exit_1_2);
+		room1.setTile(0, 2, exit_1_2);
+		room2.setTile(2, 2, exit_2_1);
+
 		Room[] rooms = new Room[2];
 		rooms[0] = room1;
 		rooms[1] = room2;
