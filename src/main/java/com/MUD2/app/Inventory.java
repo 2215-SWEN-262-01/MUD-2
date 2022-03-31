@@ -1,7 +1,5 @@
 package com.MUD2.app;
 
-import java.util.Iterator;
-
 public class Inventory {
 	
 	private Bag[] bags;

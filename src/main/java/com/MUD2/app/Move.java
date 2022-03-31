@@ -1,7 +1,6 @@
 package com.MUD2.app;
 
 
-import java.util.LinkedList;
 import java.util.List;
 
 public class Move implements Command {
@@ -63,7 +62,7 @@ public class Move implements Command {
 
             room.moveCharacter(player, tile);
         } else {
-            System.out.println("Can't skip spaces!");
+            System.out.println("Can't move there.");
         }
         
     }

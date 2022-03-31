@@ -39,6 +39,7 @@ public class Map {
 		Item gem = new Item("Ruby", "A shiny and valuable gem", 30);
 		enemy.getInventory().getBags()[0].addItem(gem);
 		tilemap[4][4].setCharacter(enemy);
+		tilemap[1][1] = new ObstacleTile(1, 1, null);
 
 		Room room1 = new Room(tilemap, 5, 6, "A normal room");
 		

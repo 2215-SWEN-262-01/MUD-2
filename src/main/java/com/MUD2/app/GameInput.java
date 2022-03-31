@@ -43,7 +43,13 @@ public class GameInput {
 		Map map = Map.loadDefaultMap();
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(3, 3);
-		PlayerCharacter player = new PlayerCharacter("Player", "The Hero", start);
+
+		System.out.print("Enter your name: ");
+		String name = scanner.nextLine();
+		System.out.print("Enter a description of your character: ");
+		String desc = scanner.nextLine();
+
+		PlayerCharacter player = new PlayerCharacter(name, desc, start);
 		start.setCharacter(player);
 		displayRoom(room);
 
