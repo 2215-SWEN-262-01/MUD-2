@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/***
+ * The Armor class is responsible for creating an item that can augment the defenses of a player character
+ */
 public class Armor extends Equippable{
 	private int defense;
 

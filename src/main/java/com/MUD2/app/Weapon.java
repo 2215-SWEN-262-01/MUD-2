@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * The Weapon class is responsible for creating an item that can augment the attack of a player character
+ */
 public class Weapon extends Equippable{
 	private int attack;
 

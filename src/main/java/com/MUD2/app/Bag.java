@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * A bag is an item that the player character can equip to make their inventory size larger
+ */
 public class Bag implements Iterable<Item> {
 	private Set<Item> items;
 	private final int capacity;

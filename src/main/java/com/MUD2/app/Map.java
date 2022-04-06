@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * A map is a collection of rooms that the client will be able to play on.
+ */
 public class Map {
 	private Room[] rooms;
 	private Room currentRoom;

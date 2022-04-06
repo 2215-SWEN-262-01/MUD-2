@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * Food is an object that when consumed by a player character it restores a certain number of health.
+ */
 public class Food extends Consumable{
 	private int health;
 

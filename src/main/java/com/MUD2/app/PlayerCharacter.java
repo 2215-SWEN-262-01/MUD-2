@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * The Player character is a game character that is controlled by the client
+ */
 public class PlayerCharacter extends GameCharacter{
 	public static final int MAX_HEALTH = 100;
 	public static final int DEFAULT_ATTACK = 10;

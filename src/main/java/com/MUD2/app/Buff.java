@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * A buff is an item that allows the player character to increase their stats by a specified amount
+ */
 public class Buff extends Consumable{
 	private StatType statType;
 

@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+/**
+ * This abstract class represents an individual game character that can be on the map.
+ */
 public abstract class GameCharacter {
 	
 	private String name;

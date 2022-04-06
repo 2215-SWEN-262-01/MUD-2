@@ -5,54 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Attack.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Armor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Bag.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/DropItem.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/ExitTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/ExitTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/ExitTile.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Loot.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Buff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Consumable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Equippable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Equippable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/NPC.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Room.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Save.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/UseItem.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Armor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Armor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Buff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Buff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ChestTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Consumable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Consumable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/EmptyTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/EmptyTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Equippable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Equippable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/EquippableVistor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/EquippableVistor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ExitTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ExitTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/GameCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/GameCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/InventoryVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/InventoryVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/NPC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/ObstacleTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/ObstacleTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/PlayerCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/PlayerCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/StatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/StatType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TotalGoldVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TotalGoldVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/TrapTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Weapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Weapon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/StatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/StatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +39,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="ProjectId" id="25tiGiHqski5KMkzzF2SAgGv8Yn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -132,9 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646352690680</updated>
       <workItem from="1646352691954" duration="4163000" />
-      <workItem from="1647308006697" duration="7524000" />
-      <workItem from="1647316858571" duration="2076000" />
-      <workItem from="1647482605937" duration="4601000" />
+      <workItem from="1647308006697" duration="7114000" />
     </task>
     <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
       <created>1647057430515</created>
@@ -211,24 +167,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Committing project files to keep Git happy" />
     <option name="LAST_COMMIT_MESSAGE" value="Committing project files to keep Git happy" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-wildcard-method">
-          <properties class="Move" method="execute">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties>
-            <option name="NOTIFY_CAUGHT" value="false" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
