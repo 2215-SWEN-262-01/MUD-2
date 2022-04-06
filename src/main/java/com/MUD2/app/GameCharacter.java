@@ -118,4 +118,14 @@ public abstract class GameCharacter {
 	public String toString() {
 		return "Character{name=" + name + ", desc=" + description + ", health=" + health + ", attack=" + attack + ", defense=" + defense + "}";
 	}
+
+
+	protected void addItemToInventory(Item item) {
+		for ( Bag checkbag : this.inventory.getBags()) {
+			if (checkbag.getSpace() > 0) {
+				checkbag.addItem(item);
+				break;
+			}
+		}
+	}
 }

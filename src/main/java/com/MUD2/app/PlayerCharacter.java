@@ -21,7 +21,7 @@ public class PlayerCharacter extends GameCharacter{
 	public void equipWeapon(Weapon weapon) {
 		if(currentWeapon != null) {
 			this.setAttack(this.getAttack() - currentWeapon.getAttack());
-
+			this.addItemToInventory(currentWeapon);
 		}
 		this.currentWeapon = weapon; 
 		this.setAttack(this.getAttack() + currentWeapon.getAttack());
@@ -30,6 +30,7 @@ public class PlayerCharacter extends GameCharacter{
 	public void equipArmor(Armor armor) { 
 		if(currentArmor != null) {
 			this.setDefense(this.getDefense() - currentArmor.getDefense());
+			this.addItemToInventory(currentArmor);
 		}
 		this.currentArmor = armor; 
 		this.setDefense(this.getDefense() + currentArmor.getDefense());

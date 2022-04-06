@@ -1,7 +1,5 @@
 package com.MUD2.app;
 
-import java.util.Iterator;
-
 public class Inventory {
 	
 	private Bag[] bags;
@@ -32,7 +30,10 @@ public class Inventory {
 	public int getTotalGold() {
 		int result = 0;
 		for (int i = 0; i < this.bags.length; i++) {
-			result += getTotalGoldInBag(i);
+			if (bags[i] != null) {
+				result += getTotalGoldInBag(i);
+			}
+
 		}
 		return result;
 	}

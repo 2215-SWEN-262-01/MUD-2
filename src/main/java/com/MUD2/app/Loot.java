@@ -1,7 +1,5 @@
 package com.MUD2.app;
 
-import java.util.Iterator;
-
 public class Loot implements Command {
 /**
  * A command that is made whenever a player attempts to loot an item.
