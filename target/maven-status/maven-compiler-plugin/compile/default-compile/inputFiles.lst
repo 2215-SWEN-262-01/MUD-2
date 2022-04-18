@@ -7,6 +7,7 @@
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Item.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/NPC.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Disarm.java
+/home/jack/MUD-2/src/main/java/com/MUD2/app/SwingWorldDisplay.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/UseItem.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Map.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/PlayerCharacter.java
@@ -26,6 +27,7 @@
 /home/jack/MUD-2/src/main/java/com/MUD2/app/EquippableVistor.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Room.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Weapon.java
+/home/jack/MUD-2/src/main/java/com/MUD2/app/SwingUserInput.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/InventoryVisitor.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Command.java
 /home/jack/MUD-2/src/main/java/com/MUD2/app/Tile.java

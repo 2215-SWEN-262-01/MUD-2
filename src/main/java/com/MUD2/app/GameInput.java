@@ -1,11 +1,15 @@
 package com.MUD2.app;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
 /**
  * Class to conduct console input for the player to control the game in a loop. Serves as the application entry point
  * @author Jack Ganger-Spivak
  */
 public class GameInput {
+	private static final boolean GUI = true;
 	/**
 	 * Prints out an ASCII representation of the current room
 	 * @param room The room to display
@@ -37,12 +41,21 @@ public class GameInput {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Welcome to M.U.D! Enter help for controls");
 		
+		System.out.println("Welcome to M.U.D! Enter help for controls");
 		Scanner scanner = new Scanner(System.in);
-		Map map = Map.loadDefaultMap();
+		final Map map = Map.loadDefaultMap();
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(3, 3);
+		
+		if (GUI) {
+			SwingUtilities.invokeLater(new Runnable() {
+				public void run() {
+					SwingUserInput sui = new SwingUserInput(map);
+					sui.setVisible(true);
+				}
+			});
+		}
 
 		System.out.print("Enter your name: ");
 		String name = scanner.nextLine();
