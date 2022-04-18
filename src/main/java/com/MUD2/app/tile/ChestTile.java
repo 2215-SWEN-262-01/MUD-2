@@ -1,4 +1,7 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.GameCharacter;
+import com.MUD2.app.inventory.*;
 
 /**
  * A Tile that represents a chest. Characters can loot a chest, and after it is

@@ -1,7 +1,10 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
 
 
 import java.util.List;
+
+import com.MUD2.app.PlayerCharacter;
+import com.MUD2.app.tile.*;
 
 public class Move implements Command {
 /**

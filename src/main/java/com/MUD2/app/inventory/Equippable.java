@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
+
+import com.MUD2.app.PlayerCharacter;
 
 /**
  * Equipable is an abstract class that is responsible for establishing what methods that an

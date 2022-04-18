@@ -1,4 +1,7 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
+
+import com.MUD2.app.PlayerCharacter;
+import com.MUD2.app.inventory.*;
 
 public class UseItem implements Command {
 /**

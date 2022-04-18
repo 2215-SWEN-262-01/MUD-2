@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * A Tile is a space for Characters to occupy. Different subclasses of Tiles 
@@ -22,16 +24,16 @@ public abstract class Tile {
      *
      * @param character
      */
-    void setCharacter(GameCharacter character) {this.character = character;}
+    public void setCharacter(GameCharacter character) {this.character = character;}
     
     /**
      * If the Tile is currently occupied, it will remove its Character
      */
-    void removeCharacter() {
+    public void removeCharacter() {
         this.setCharacter(null);
     }
 
-    GameCharacter getCharacter() {return character;}
-    int getHorizantalLocation() {return horizantalLocation;}
-    int getVerticalLocation() {return verticalLocation;}
+    public GameCharacter getCharacter() {return character;}
+    public int getHorizantalLocation() {return horizantalLocation;}
+    public int getVerticalLocation() {return verticalLocation;}
 }

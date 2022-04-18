@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * The default type of Tile. It is an empty space to be occupied by a Character

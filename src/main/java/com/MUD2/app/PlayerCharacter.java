@@ -1,5 +1,8 @@
 package com.MUD2.app;
 
+import com.MUD2.app.inventory.*;
+import com.MUD2.app.tile.*;
+
 /**
  * The Player character is a game character that is controlled by the client
  */
@@ -12,7 +15,7 @@ public class PlayerCharacter extends GameCharacter{
 	private Armor currentArmor;
 	
 
-	protected PlayerCharacter(String name, String description, Tile tile) {
+	public PlayerCharacter(String name, String description, Tile tile) {
 		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
 		this.currentArmor = null;
 		this.currentWeapon = null;

@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * A Tile that represents an exit. When Characters move to this tile they will

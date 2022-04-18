@@ -1,4 +1,7 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
+
+import com.MUD2.app.inventory.*;
+import com.MUD2.app.PlayerCharacter;
 
 public class DropItem implements Command {
 /**

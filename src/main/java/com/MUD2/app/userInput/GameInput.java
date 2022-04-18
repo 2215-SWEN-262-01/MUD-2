@@ -1,5 +1,10 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
 import java.util.Scanner;
+
+import com.MUD2.app.*;
+import com.MUD2.app.inventory.*;
+import com.MUD2.app.tile.*;
+
 
 /**
  * Class to conduct console input for the player to control the game in a loop. Serves as the application entry point

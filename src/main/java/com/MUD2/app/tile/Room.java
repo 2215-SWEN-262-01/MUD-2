@@ -1,7 +1,9 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
 
 import java.util.LinkedList;
 import java.util.List;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * A Room contains Tiles for different characters to move to and interact
@@ -25,7 +27,7 @@ public class Room {
     /**
      * Converts any type of Tile to an EmptyTile
      */
-    void convertToEmptyTile(int x, int y) { 
+    public void convertToEmptyTile(int x, int y) { 
         GameCharacter character = this.tiles[x][y].getCharacter();
         this.tiles[x][y] = new EmptyTile(x,y,character);
     }
@@ -36,7 +38,7 @@ public class Room {
      * @param character current Character
      * @return array of tiles
      */
-    List<Tile> findAvailableTiles(GameCharacter character) {
+    public List<Tile> findAvailableTiles(GameCharacter character) {
 
         LinkedList<Tile> availableTiles = new LinkedList<>();
         int x = character.getCurrentTile().getHorizantalLocation();
@@ -62,7 +64,7 @@ public class Room {
      * @param tile where the chacter is moving to
      * @return array of tiles
      */
-    void moveCharacter(GameCharacter character, Tile tile) {
+    public void moveCharacter(GameCharacter character, Tile tile) {
 		//Fix for phantom character created when switching tile type underneath a player
 		int x = character.getCurrentTile().getHorizantalLocation();
 		int y = character.getCurrentTile().getVerticalLocation();
@@ -74,7 +76,7 @@ public class Room {
         character.setCurrentTile(tile);
     }
 
-    Tile getTile(int x, int y) {
+    public Tile getTile(int x, int y) {
         try {
             return tiles[x][y];
         } catch (IndexOutOfBoundsException e) {

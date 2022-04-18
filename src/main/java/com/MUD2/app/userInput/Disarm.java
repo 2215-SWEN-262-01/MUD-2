@@ -1,5 +1,9 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
 import java.util.Random;
+
+import com.MUD2.app.PlayerCharacter;
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.tile.TrapTile;
 
 public class Disarm implements Command {
 /**

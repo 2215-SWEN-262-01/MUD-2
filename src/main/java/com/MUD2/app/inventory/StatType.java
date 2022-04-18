@@ -1,4 +1,4 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
 
 /**
  * This enumeration is responsible for outlining the stats of a character

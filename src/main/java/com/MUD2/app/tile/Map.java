@@ -1,4 +1,7 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.NPC;
+import com.MUD2.app.inventory.*;
 
 /**
  * A map is a collection of rooms that the client will be able to play on.

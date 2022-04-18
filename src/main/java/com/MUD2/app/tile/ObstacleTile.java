@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.tile;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * A Tile that represents an obstacle. This tile cannot be occupied by a 

@@ -1,4 +1,4 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
 
 import java.util.LinkedList;
 

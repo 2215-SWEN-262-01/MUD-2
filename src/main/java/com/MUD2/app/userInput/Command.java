@@ -1,4 +1,4 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
 
 public interface Command {
 /**

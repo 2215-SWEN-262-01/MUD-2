@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * Food is an object that when consumed by a player character it restores a certain number of health.

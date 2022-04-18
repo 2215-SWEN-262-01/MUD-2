@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
+
+import com.MUD2.app.PlayerCharacter;
 
 /**
  * The Weapon class is responsible for creating an item that can augment the attack of a player character

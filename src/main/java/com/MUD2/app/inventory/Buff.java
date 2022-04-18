@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
+
+import com.MUD2.app.GameCharacter;
 
 /**
  * A buff is an item that allows the player character to increase their stats by a specified amount

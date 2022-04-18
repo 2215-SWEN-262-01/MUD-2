@@ -1,8 +1,9 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+
 
 /**
  * A bag is an item that the player character can equip to make their inventory size larger

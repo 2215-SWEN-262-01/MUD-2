@@ -1,4 +1,8 @@
-package com.MUD2.app;
+package com.MUD2.app.userInput;
+
+import com.MUD2.app.GameCharacter;
+import com.MUD2.app.PlayerCharacter;
+import com.MUD2.app.tile.*;
 
 public class Attack implements Command{
 /**

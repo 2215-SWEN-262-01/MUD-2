@@ -1,4 +1,6 @@
-package com.MUD2.app;
+package com.MUD2.app.inventory;
+
+import com.MUD2.app.PlayerCharacter;
 
 /***
  * The Armor class is responsible for creating an item that can augment the defenses of a player character
