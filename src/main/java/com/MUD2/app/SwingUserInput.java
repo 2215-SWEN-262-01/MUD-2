@@ -3,7 +3,7 @@ package com.MUD2.app;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
-public class SwingUserInput extends JFrame{
+public class SwingUserInput extends JFrame implements Runnable {
     private Map map;
     private SwingWorldDisplay world;
 
@@ -13,6 +13,13 @@ public class SwingUserInput extends JFrame{
         this.map = map;
         this.world = new SwingWorldDisplay(map);
         this.add(world);
+    }
+
+    @Override
+    public void run() {
+        // TODO Auto-generated method stub
+        SwingUserInput sui = new SwingUserInput(map);
+		sui.setVisible(true);
     }
 
 

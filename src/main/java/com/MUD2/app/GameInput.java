@@ -34,6 +34,9 @@ public class GameInput {
 					tileChar = '@';
 				if (tile.getCharacter() instanceof NPC)
 					tileChar = '!';
+				if (tile instanceof GoalTile) {
+					tileChar = '$';
+				}
 				System.out.print(tileChar);
 			}
 			System.out.println();
@@ -44,23 +47,26 @@ public class GameInput {
 		
 		System.out.println("Welcome to M.U.D! Enter help for controls");
 		Scanner scanner = new Scanner(System.in);
-		final Map map = Map.loadDefaultMap();
+		Map map = null;
+		while(map == null) {
+			System.out.println("Choose a map: ");
+			Map.listPremadeMaps();
+			String mapChoice = scanner.nextLine();
+			map = Map.generateMap(mapChoice);
+		}
 		Room room = map.getCurrentRoom();
-		Tile start = room.getTile(3, 3);
+		Tile start = room.getTile(2, 2);
 		
 		if (GUI) {
-			SwingUtilities.invokeLater(new Runnable() {
-				public void run() {
-					SwingUserInput sui = new SwingUserInput(map);
-					sui.setVisible(true);
-				}
-			});
+			SwingUtilities.invokeLater(new SwingUserInput(map));
 		}
 
 		System.out.print("Enter your name: ");
 		String name = scanner.nextLine();
 		System.out.print("Enter a description of your character: ");
 		String desc = scanner.nextLine();
+		
+		
 
 		PlayerCharacter player = new PlayerCharacter(name, desc, start);
 		start.setCharacter(player);
@@ -83,6 +89,9 @@ public class GameInput {
 		System.out.print(": ");
 		String[] command = input.nextLine().split(" ");
 		Tile currentTile = player.getCurrentTile();
+		if(currentTile instanceof GoalTile) {
+			return true;
+		}
 		int x = currentTile.getHorizantalLocation();
 		int y = currentTile.getVerticalLocation();
 		Move move;
