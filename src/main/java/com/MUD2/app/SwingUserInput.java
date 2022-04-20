@@ -22,5 +22,8 @@ public class SwingUserInput extends JFrame implements Runnable {
 		sui.setVisible(true);
     }
 
-
+    public void displayRoom() {
+        world.repaint();
+        repaint();
+    }
 }

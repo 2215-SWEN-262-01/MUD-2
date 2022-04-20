@@ -15,14 +15,52 @@ public class SwingWorldDisplay extends JPanel {
     }
 
     public Dimension getPreferredSize() {
-        return new Dimension(320, 320);
+        return new Dimension(map.getCurrentRoom().getWidth()*32, map.getCurrentRoom().getHeight()*32);
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Room room = map.getCurrentRoom();
+        for (int x = 0; x < room.getWidth(); x++) {
+            for (int y = 0; y < room.getHeight(); y++) {
+                Tile tile = room.getTile(x, y);
+                if (tile instanceof EmptyTile) {
+                    g.setColor(Color.BLACK);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+                if (tile instanceof ObstacleTile) {
+					g.setColor(Color.DARK_GRAY);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+				if (tile instanceof TrapTile) {
+                    g.setColor(Color.BLACK);
+                    g.fillRect(x*32, y*32, 32, 32); //looks identical to empty
+				    //Might be a good idea to keep track of whether trap is sprung, 
+				    //then change it to look different afterwards
+                }
+				if (tile instanceof ChestTile) {
+                    g.setColor(new Color(158, 117, 55)); //brown
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+				if (tile instanceof ExitTile) {
+                    g.setColor(Color.RED);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+				if (tile.getCharacter() instanceof PlayerCharacter) {
+                    g.setColor(Color.GREEN);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+				if (tile.getCharacter() instanceof NPC) {
+                    g.setColor(Color.BLUE);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
+				if (tile instanceof GoalTile) {
+                    g.setColor(Color.YELLOW);
+                    g.fillRect(x*32, y*32, 32, 32);
+				}
+            }
+        }
         
-        g.setColor(Color.BLACK);
-        g.fillRect(32, 32, 32, 32);
+        
     }
 }

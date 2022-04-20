@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
  */
 public class GameInput {
 	private static final boolean GUI = true;
+	private static SwingUserInput sui;
 	/**
 	 * Prints out an ASCII representation of the current room
 	 * @param room The room to display
@@ -58,7 +59,8 @@ public class GameInput {
 		Tile start = room.getTile(2, 2);
 		
 		if (GUI) {
-			SwingUtilities.invokeLater(new SwingUserInput(map));
+			sui = new SwingUserInput(map);
+			SwingUtilities.invokeLater(sui);
 		}
 
 		System.out.print("Enter your name: ");
@@ -74,8 +76,12 @@ public class GameInput {
 
 		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
 			displayRoom(map.getCurrentRoom());
+			if (GUI)
+				sui.displayRoom();
 		}
 		System.out.println("Quitting...");
+		sui.dispose();
+		
 		scanner.close();
 	}
 	
