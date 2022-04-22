@@ -3,9 +3,14 @@ package com.MUD2.app;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
 
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
+import javax.swing.event.MouseInputAdapter;
+
+import org.w3c.dom.events.MouseEvent;
 
 public class SwingWorldDisplay extends JPanel {
     private Map map;
@@ -18,13 +23,14 @@ public class SwingWorldDisplay extends JPanel {
         return new Dimension(map.getCurrentRoom().getWidth()*32, map.getCurrentRoom().getHeight()*32);
     }
 
-    public void paintComponent(Graphics g) {
+    @Override
+    protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Room room = map.getCurrentRoom();
-        System.out.println("Displaying room from Swing thread");
         for (int x = 0; x < room.getWidth(); x++) {
             for (int y = 0; y < room.getHeight(); y++) {
                 Tile tile = room.getTile(x, y);
+                
                 if (tile instanceof EmptyTile) {
                     g.setColor(Color.BLACK);
                     g.fillRect(x*32, y*32, 32, 32);
@@ -60,6 +66,8 @@ public class SwingWorldDisplay extends JPanel {
                     g.setColor(Color.YELLOW);
                     g.fillRect(x*32, y*32, 32, 32);
 				}
+                g.setColor(Color.WHITE);
+                g.drawRect(x*32, y*32, 32, 32); //draw outline around tile
             }
         }
         
