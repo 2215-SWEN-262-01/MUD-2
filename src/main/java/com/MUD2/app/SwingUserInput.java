@@ -17,13 +17,12 @@ public class SwingUserInput extends JFrame implements Runnable {
 
     @Override
     public void run() {
-        // TODO Auto-generated method stub
         SwingUserInput sui = new SwingUserInput(map);
 		sui.setVisible(true);
     }
 
     public void displayRoom() {
-        world.repaint();
+        revalidate();
         repaint();
     }
 }

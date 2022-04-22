@@ -21,6 +21,7 @@ public class SwingWorldDisplay extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Room room = map.getCurrentRoom();
+        System.out.println("Displaying room from Swing thread");
         for (int x = 0; x < room.getWidth(); x++) {
             for (int y = 0; y < room.getHeight(); y++) {
                 Tile tile = room.getTile(x, y);
@@ -38,6 +39,10 @@ public class SwingWorldDisplay extends JPanel {
 				    //Might be a good idea to keep track of whether trap is sprung, 
 				    //then change it to look different afterwards
                 }
+                if (tile.getCharacter() instanceof PlayerCharacter) {
+                    g.setColor(Color.GREEN);
+                    g.fillRect(x*32, y*32, 32, 32);
+                }
 				if (tile instanceof ChestTile) {
                     g.setColor(new Color(158, 117, 55)); //brown
                     g.fillRect(x*32, y*32, 32, 32);
@@ -46,10 +51,7 @@ public class SwingWorldDisplay extends JPanel {
                     g.setColor(Color.RED);
                     g.fillRect(x*32, y*32, 32, 32);
                 }
-				if (tile.getCharacter() instanceof PlayerCharacter) {
-                    g.setColor(Color.GREEN);
-                    g.fillRect(x*32, y*32, 32, 32);
-                }
+				
 				if (tile.getCharacter() instanceof NPC) {
                     g.setColor(Color.BLUE);
                     g.fillRect(x*32, y*32, 32, 32);

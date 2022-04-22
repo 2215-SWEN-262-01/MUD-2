@@ -76,8 +76,13 @@ public class GameInput {
 
 		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
 			displayRoom(map.getCurrentRoom());
-			if (GUI)
-				sui.displayRoom();
+			if (GUI) {
+				SwingUtilities.invokeLater(new Runnable() {
+					public void run() {
+						sui.displayRoom();
+					}
+				});
+			}
 		}
 		System.out.println("Quitting...");
 		sui.dispose();
