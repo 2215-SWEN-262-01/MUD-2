@@ -19,4 +19,12 @@ public class TrapTile extends Tile {
     public void springTrap() {
         character.takeDamage(this.attackValue);
     }
+
+    /**
+     * This Method turns a tile into a string that represents a tile for saving purposes
+     */
+    @Override
+    public String toString() {
+        return "[t]";
+    }
 }
