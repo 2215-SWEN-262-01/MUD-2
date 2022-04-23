@@ -22,4 +22,9 @@ public class Item {
 	public int getGoldValue() {
 		return goldValue;
 	}
+	@Override
+	public String toString() {
+		String returnString = name + " " + description + " " + goldValue;
+		return returnString;
+	}
 }

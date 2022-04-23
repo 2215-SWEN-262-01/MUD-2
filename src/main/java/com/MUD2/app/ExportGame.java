@@ -36,7 +36,8 @@ public class ExportGame implements Command {
 			try {
 				writer = new PrintWriter(file);
 				
-				//Saving happens here
+				writer.write(player.getInventory().toString());
+				
 				
 				writer.close();
 			} catch (FileNotFoundException e) {

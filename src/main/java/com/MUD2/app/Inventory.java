@@ -53,4 +53,15 @@ public class Inventory {
 	public Bag[] getBags() {
 		return bags;
 	}
+	
+	@Override
+	public String toString() {
+		String returnString = "";
+		for(Bag bag : bags) {
+			if(bag != null) {
+				returnString += bag.toString();
+			}
+		}
+		return returnString;
+	}
 }
