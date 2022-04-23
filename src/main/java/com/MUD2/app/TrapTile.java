@@ -25,6 +25,6 @@ public class TrapTile extends Tile {
      */
     @Override
     public String toString() {
-        return "[t]";
+        return "[t] "+ attackValue;
     }
 }

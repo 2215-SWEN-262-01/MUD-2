@@ -15,6 +15,6 @@ public class ObstacleTile extends Tile{
      */
     @Override
     public String toString() {
-        return "[]";
+        return "[o]";
     }
 }

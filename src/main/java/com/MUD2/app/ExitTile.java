@@ -33,6 +33,6 @@ public class ExitTile extends Tile{
      */
     @Override
     public String toString() {
-        return "[]";
+        return "[x]";
     }
 }
