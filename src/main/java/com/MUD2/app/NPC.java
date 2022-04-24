@@ -18,4 +18,9 @@ public class NPC extends GameCharacter{
 		return isNocturnal;
 	}
 
+	public String export() {
+		String returnString = "Player:"+ this.getName() + ":" + this.getDescription() + ":" + this.getInventory() + ":" + isNocturnal();
+		return returnString;
+	}
+
 }
