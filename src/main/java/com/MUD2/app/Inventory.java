@@ -64,4 +64,14 @@ public class Inventory {
 		}
 		return returnString;
 	}
+
+	public String export() {
+		String returnString = "";
+		for(Bag bag : bags) {
+			if(bag != null) {
+				returnString += bag.export();
+			}
+		}
+		return returnString;
+	}
 }

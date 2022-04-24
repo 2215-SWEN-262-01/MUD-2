@@ -19,4 +19,10 @@ public class Armor extends Equippable{
 	public int getDefense() {
 		return defense;
 	}
+
+	@Override
+	public String export() {
+		String returnString = "Armor:"+ this.getName() + ":" + getDescription() + ":" + getGoldValue() + ":" + this.defense;
+		return returnString;
+	}
 }

@@ -1,6 +1,6 @@
 package com.MUD2.app;
 
-public class Item {
+public abstract class Item {
 	private String name;
 	private String description;
 	private int goldValue;
@@ -27,4 +27,6 @@ public class Item {
 		String returnString = name + " " + description + " " + goldValue;
 		return returnString;
 	}
+
+	public abstract String export();
 }

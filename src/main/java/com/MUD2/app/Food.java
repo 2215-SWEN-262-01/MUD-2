@@ -15,5 +15,10 @@ public class Food extends Consumable{
 	public void use(GameCharacter character) {
 		character.heal(health);	
 	}
-	
+
+	@Override
+	public String export() {
+		String returnString = "Food:"+ this.getName() + ":" + getDescription() + ":" + getGoldValue() + ":" + this.health;
+		return returnString;
+	}
 }

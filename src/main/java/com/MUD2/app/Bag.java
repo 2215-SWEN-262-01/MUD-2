@@ -53,4 +53,12 @@ public class Bag implements Iterable<Item> {
 		}
 		return returnString;
 	}
+
+	public String export() {
+		String returnString = "";
+		for(Item item : items) {
+			returnString += item.export() + "|";
+		}
+		return returnString;
+	}
 }

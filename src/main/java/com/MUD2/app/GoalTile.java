@@ -13,7 +13,6 @@ public class GoalTile extends Tile{
     /**
      * This Method turns a tile into a string that represents a tile for saving purposes
      */
-    @Override
     public String toString() {
         return "[g]";
     }
