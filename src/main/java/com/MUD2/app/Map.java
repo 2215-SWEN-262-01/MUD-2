@@ -200,4 +200,11 @@ public class Map {
 	public void setCurrentRoom(Room currentRoom) {
 		this.currentRoom = currentRoom;
 	}
+	public String export () {
+		String returnstring = "Map,";
+		for (int i = 0; i < rooms.length; i++) {
+			returnstring += rooms[i].export() +",";
+		}
+		return returnstring;
+	}
 }
