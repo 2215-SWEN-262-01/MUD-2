@@ -23,7 +23,6 @@ public class TrapTile extends Tile {
     /**
      * This Method turns a tile into a string that represents a tile for saving purposes
      */
-
     public String export() {
         return "[t] "+ attackValue;
     }

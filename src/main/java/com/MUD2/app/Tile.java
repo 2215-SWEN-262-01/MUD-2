@@ -34,4 +34,6 @@ public abstract class Tile {
     GameCharacter getCharacter() {return character;}
     int getHorizantalLocation() {return horizantalLocation;}
     int getVerticalLocation() {return verticalLocation;}
+
+    abstract String export();
 }
