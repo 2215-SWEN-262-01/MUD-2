@@ -130,4 +130,5 @@ public abstract class GameCharacter {
 			}
 		}
 	}
+	abstract public String export();
 }

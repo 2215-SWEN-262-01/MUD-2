@@ -14,6 +14,10 @@ public class EmptyTile extends Tile{
      * This Method turns a tile into a string that represents a tile for saving purposes
      */
     public String export() {
-        return "[]";
+        if (getCharacter() != null) {
+            return "[" + getCharacter().export()+ "]";
+        }else {
+            return "[]";
+        }
     }
 }

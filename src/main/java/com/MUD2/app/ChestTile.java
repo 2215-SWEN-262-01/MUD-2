@@ -22,6 +22,10 @@ public class ChestTile extends Tile{
      * This Method turns a tile into a string that represents a tile for saving purposes
      */
     public String export() {
-        return "[" + this.inventory.export() + "]";
+        if (getCharacter() != null) {
+            return "[c:" + this.inventory.export() +":" + getCharacter().export()+ "]";
+        }else {
+            return "[" + this.inventory.export() + "]";
+        }
     }
 }

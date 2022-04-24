@@ -51,6 +51,7 @@ public class PlayerCharacter extends GameCharacter{
 		return;
 	}
 
+	@Override
 	public String export() {
 		String returnString = "Player:"+ this.getName() + ":" + this.getDescription() + ":" + this.getInventory();
 		return returnString;
