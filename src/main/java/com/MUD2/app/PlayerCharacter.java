@@ -58,6 +58,7 @@ public class PlayerCharacter extends GameCharacter{
 			setAttack(imprint.getAttack());
 			setCurrentHealth(imprint.getHealth());
 			System.out.println("You were saved by your prayers!");
+			this.imprint = null;
 			return;
 		}
 	}
