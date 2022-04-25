@@ -5,20 +5,25 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
 import java.awt.event.ActionListener;
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 
 public class SwingUserInput extends JFrame implements Runnable {
     private Map map;
+    private PlayerCharacter player;
     private final SwingWorldDisplay world;
+    private final SwingCommandDisplay cmd;
 
-    public SwingUserInput(Map map) {
+    public SwingUserInput(Map map, PlayerCharacter player) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(640, 480);
+		//this.setSize(640, 480);
         this.map = map;
         this.world = new SwingWorldDisplay(map);
-        world.validate();
-        this.getContentPane().add(world);
-        this.validate();
+        this.cmd = new SwingCommandDisplay(player, map);
+        this.add(cmd, BorderLayout.PAGE_END);
+        this.add(world, BorderLayout.PAGE_START);
+        
+        
         
         ActionListener timerAction = new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -35,7 +40,8 @@ public class SwingUserInput extends JFrame implements Runnable {
 
     @Override
     public void run() {
-        SwingUserInput sui = new SwingUserInput(map);
+        SwingUserInput sui = new SwingUserInput(map, player);
+        sui.pack();
 		sui.setVisible(true);
     }
 

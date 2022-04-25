@@ -58,11 +58,6 @@ public class GameInput {
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(2, 2);
 		
-		if (GUI) {
-			sui = new SwingUserInput(map);
-			SwingUtilities.invokeLater(sui);
-		}
-
 		System.out.print("Enter your name: ");
 		String name = scanner.nextLine();
 		System.out.print("Enter a description of your character: ");
@@ -71,6 +66,11 @@ public class GameInput {
 		
 
 		PlayerCharacter player = new PlayerCharacter(name, desc, start);
+
+		if (GUI) {
+			sui = new SwingUserInput(map, player);
+			SwingUtilities.invokeLater(sui);
+		}
 		start.setCharacter(player);
 		displayRoom(room);
 
