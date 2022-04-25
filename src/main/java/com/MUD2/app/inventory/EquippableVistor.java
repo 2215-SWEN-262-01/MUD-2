@@ -2,6 +2,7 @@ package com.MUD2.app.inventory;
 
 import java.util.LinkedList;
 
+
 public class EquippableVistor implements InventoryVisitor {
     private LinkedList<Item> items = new LinkedList<>();
 

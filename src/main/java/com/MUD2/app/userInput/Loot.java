@@ -1,7 +1,9 @@
-package com.MUD2.app.inventory;
+package com.MUD2.app.userInput;
 
 import com.MUD2.app.PlayerCharacter;
-import com.MUD2.app.userInput.Command;
+import com.MUD2.app.inventory.Bag;
+import com.MUD2.app.inventory.Inventory;
+import com.MUD2.app.inventory.Item;
 
 public class Loot implements Command {
 /**
