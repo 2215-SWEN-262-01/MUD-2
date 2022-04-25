@@ -1,7 +1,6 @@
 package com.MUD2.app;
 import java.util.Scanner;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 /**
@@ -72,20 +71,15 @@ public class GameInput {
 			SwingUtilities.invokeLater(sui);
 		}
 		start.setCharacter(player);
-		displayRoom(room);
 
-		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
-			displayRoom(map.getCurrentRoom());
-			if (GUI) {
-				SwingUtilities.invokeLater(new Runnable() {
-					public void run() {
-						sui.displayRoom();
-					}
-				});
+		if (!GUI) {
+			displayRoom(room);
+			while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
+				displayRoom(map.getCurrentRoom());
 			}
+			System.out.println("Quitting...");
 		}
-		System.out.println("Quitting...");
-		sui.dispose();
+		
 		
 		scanner.close();
 	}

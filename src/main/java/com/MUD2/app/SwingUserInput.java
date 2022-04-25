@@ -1,6 +1,8 @@
 package com.MUD2.app;
 
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
@@ -13,13 +15,16 @@ public class SwingUserInput extends JFrame implements Runnable {
     private PlayerCharacter player;
     private final SwingWorldDisplay world;
     private final SwingCommandDisplay cmd;
+    private final JTextArea log;
 
     public SwingUserInput(Map map, PlayerCharacter player) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//this.setSize(640, 480);
         this.map = map;
+        this.player = player;
         this.world = new SwingWorldDisplay(map);
         this.cmd = new SwingCommandDisplay(player, map);
+        this.log = new JTextArea(5, 30);
+        this.add(new JScrollPane(log), BorderLayout.WEST);
         this.add(cmd, BorderLayout.PAGE_END);
         this.add(world, BorderLayout.PAGE_START);
         
@@ -27,7 +32,7 @@ public class SwingUserInput extends JFrame implements Runnable {
         
         ActionListener timerAction = new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                world.repaint();
+                displayRoom();
                 //This is a pretty dumb way of doing things but it does work for now
                 //Ideally repaint would only be called when each turn is finished
                 //But for some reason that doesn't work so timer it is
@@ -46,6 +51,15 @@ public class SwingUserInput extends JFrame implements Runnable {
     }
 
     public void displayRoom() {
+        if (player.getDefeated()) {
+            this.dispose();
+            System.exit(0);
+        }
         world.repaint();
+        
+    }
+
+    public void logPrint(String msg) {
+        log.setText(log.getText() + msg + "\n");
     }
 }

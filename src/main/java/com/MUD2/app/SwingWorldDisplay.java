@@ -3,14 +3,9 @@ package com.MUD2.app;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.event.MouseAdapter;
 
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import javax.swing.event.MouseInputAdapter;
-
-import org.w3c.dom.events.MouseEvent;
 
 public class SwingWorldDisplay extends JPanel {
     private Map map;

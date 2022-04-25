@@ -30,6 +30,8 @@ public class Map {
 	}	
 	
 	public static Map generateMap(String mapName) {
+		if (mapName.isEmpty())
+			mapName = "Classic Dungeon"; //now can enter no name for faster launching
 		if(mapName.equals("Classic Dungeon")) {
 			//Dungeon One gen
 			Tile[][] tilemap = new Tile[5][6];
