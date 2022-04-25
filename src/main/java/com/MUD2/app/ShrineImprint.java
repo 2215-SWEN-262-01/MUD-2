@@ -11,4 +11,15 @@ public class ShrineImprint {
         this.defense = CurrentDefense;
     }
 
+    public int getAttack() {
+        return attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public  int getHealth () {
+        return health;
+    }
 }

@@ -62,6 +62,8 @@ public abstract class GameCharacter {
 	public void setDefense(int value) {
 		this.defense = value;
 	}
+
+	public void setCurrentHealth(int value) {this.health = value;}
 	
 	public Tile getCurrentTile() {
         return currentTile;

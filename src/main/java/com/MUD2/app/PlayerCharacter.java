@@ -49,9 +49,17 @@ public class PlayerCharacter extends GameCharacter{
 	}
 	@Override
 	protected void onDefeat() {
-		this.setDefeated(true);
-		System.out.println("You died! Game over...");
-		return;
+		if (imprint == null) {
+			this.setDefeated(true);
+			System.out.println("You died! Game over...");
+			return;
+		} else {
+			setDefense(imprint.getDefense());
+			setAttack(imprint.getAttack());
+			setCurrentHealth(imprint.getHealth());
+			System.out.println("You were saved by your prayers!");
+			return;
+		}
 	}
 
 }
