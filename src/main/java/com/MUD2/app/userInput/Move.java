@@ -56,6 +56,8 @@ public class Move implements Command {
 				map.setCurrentRoom(exit.getEndRoom());
                 //player.setCurrentTile(exit);
                 tile = exit.getOtherExit();
+			} else if(tile instanceof GoalTile) {
+				System.out.println("You won! Use any movement key to exit...");
 			}
 			if (tile.getCharacter() != null) {
 				Attack attack = new Attack(player, tile.getCharacter(), room);
