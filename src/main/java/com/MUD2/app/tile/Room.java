@@ -108,7 +108,7 @@ public class Room {
     public String exportTiles() {
         String returnstring = "";
         for (int i = 0; i < tiles.length; i++) {
-            for (int j = 0; i < tiles.length; j++) {
+            for (int j = 0; j < tiles[0].length; j++) {
                 returnstring += tiles[i][j].export();
             }
         }
