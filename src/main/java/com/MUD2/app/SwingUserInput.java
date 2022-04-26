@@ -34,7 +34,7 @@ public class SwingUserInput extends JFrame implements Runnable {
         this.add(inv, BorderLayout.EAST);
         this.add(cmd, BorderLayout.PAGE_END);
         this.add(world, BorderLayout.PAGE_START);
-        this.add(login, BorderLayout.EAST);
+        //this.add(login, BorderLayout.EAST);
         
         
         
