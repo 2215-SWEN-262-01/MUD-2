@@ -1,16 +1,16 @@
 package com.MUD2.app;
 
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
+
+import javax.swing.*;
 
 import com.MUD2.app.tile.Map;
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.userInput.SwingUserLogin;
 
 import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
+import java.util.Scanner;
 
 public class SwingUserInput extends JFrame implements Runnable {
     private Map map;
@@ -19,6 +19,7 @@ public class SwingUserInput extends JFrame implements Runnable {
     private final SwingCommandDisplay cmd;
     private final SwingInventoryDisplay inv;
     private final JTextArea log;
+    private final SwingUserLogin login;
 
     public SwingUserInput(Map map, PlayerCharacter player) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,10 +29,12 @@ public class SwingUserInput extends JFrame implements Runnable {
         this.inv = new SwingInventoryDisplay(player);
         this.cmd = new SwingCommandDisplay(player, map, inv);
         this.log = new JTextArea(5, 30);
+        this.login = new SwingUserLogin();
         this.add(new JScrollPane(log), BorderLayout.WEST);
         this.add(inv, BorderLayout.EAST);
         this.add(cmd, BorderLayout.PAGE_END);
         this.add(world, BorderLayout.PAGE_START);
+        this.add(login, BorderLayout.EAST);
         
         
         
@@ -68,4 +71,5 @@ public class SwingUserInput extends JFrame implements Runnable {
     public void logPrint(String msg) {
         log.setText(log.getText() + msg + "\n");
     }
+
 }
