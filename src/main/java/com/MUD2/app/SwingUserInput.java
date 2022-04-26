@@ -15,6 +15,7 @@ public class SwingUserInput extends JFrame implements Runnable {
     private PlayerCharacter player;
     private final SwingWorldDisplay world;
     private final SwingCommandDisplay cmd;
+    private final SwingInventoryDisplay inv;
     private final JTextArea log;
 
     public SwingUserInput(Map map, PlayerCharacter player) {
@@ -23,8 +24,10 @@ public class SwingUserInput extends JFrame implements Runnable {
         this.player = player;
         this.world = new SwingWorldDisplay(map);
         this.cmd = new SwingCommandDisplay(player, map);
+        this.inv = new SwingInventoryDisplay(player);
         this.log = new JTextArea(5, 30);
         this.add(new JScrollPane(log), BorderLayout.WEST);
+        this.add(inv, BorderLayout.EAST);
         this.add(cmd, BorderLayout.PAGE_END);
         this.add(world, BorderLayout.PAGE_START);
         
