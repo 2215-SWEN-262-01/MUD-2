@@ -19,4 +19,9 @@ public class History {
         this.livesLost += LivesLost;
         this.gamesPlayed += gamesPlayed;
     }
+    @Override
+    public String toString() {
+        return "Gold Earned: " + goldEarned +"Items Found:"+itemsFound + "Lives Lost" +livesLost + "Games Played:" + gamesPlayed;
+    }
+
 }

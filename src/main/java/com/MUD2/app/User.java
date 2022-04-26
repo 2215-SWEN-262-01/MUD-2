@@ -24,7 +24,9 @@ public class User {
     public String getName() {
         return this.username;
     }
-
+    public History getHistory() {
+        return history;
+    }
     public Map getCurrentGame() {
         return currentGame;
     }
@@ -37,8 +39,12 @@ public class User {
         currentGame = map;
     }
 
-    public void setPassword(int pass) {
-        password = pass;
+    public void setPassword(String pass) {
+        password = hash(pass);
+    }
+
+    public boolean validatePassword(String pass) {
+        return hash(pass) == this.password;
     }
 
     public int hash(String password) {
