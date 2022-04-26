@@ -1,10 +1,15 @@
 package com.MUD2.app.userInput;
 import java.util.Scanner;
 
-import com.MUD2.app.*;
-import com.MUD2.app.inventory.*;
-import com.MUD2.app.tile.*;
+import javax.swing.SwingUtilities;
 
+import com.MUD2.app.ExportGame;
+import com.MUD2.app.FileType;
+import com.MUD2.app.NPC;
+import com.MUD2.app.PlayerCharacter;
+import com.MUD2.app.SwingUserInput;
+import com.MUD2.app.tile.*;
+import com.MUD2.app.inventory.*;
 
 /**
  * Class to conduct console input for the player to control the game in a loop. Serves as the application entry point
@@ -12,6 +17,8 @@ import com.MUD2.app.tile.*;
  * @author Jack Ganger-Spivak
  */
 public class GameInput {
+	private static final boolean GUI = true;
+	private static SwingUserInput sui;
 	/**
 	 * Prints out an ASCII representation of the current room
 	 * @param room The room to display
@@ -46,15 +53,9 @@ public class GameInput {
 	}
 	
 	public static void main(String[] args) {
+		
 		System.out.println("Welcome to M.U.D! Enter help for controls");
-		
 		Scanner scanner = new Scanner(System.in);
-
-		System.out.print("Enter your name: ");
-		String name = scanner.nextLine();
-		System.out.print("Enter a description of your character: ");
-		String desc = scanner.nextLine();
-		
 		Map map = null;
 		while(map == null) {
 			System.out.println("Choose a map: ");
@@ -64,15 +65,31 @@ public class GameInput {
 		}
 		Room room = map.getCurrentRoom();
 		Tile start = room.getTile(2, 2);
+		
+		System.out.print("Enter your name: ");
+		String name = scanner.nextLine();
+		System.out.print("Enter a description of your character: ");
+		String desc = scanner.nextLine();
+		
+		
 
 		PlayerCharacter player = new PlayerCharacter(name, desc, start);
-		start.setCharacter(player);
-		displayRoom(room);
 
-		while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
-			displayRoom(map.getCurrentRoom());
+		if (GUI) {
+			sui = new SwingUserInput(map, player);
+			SwingUtilities.invokeLater(sui);
 		}
-		System.out.println("Quitting...");
+		start.setCharacter(player);
+
+		if (!GUI) {
+			displayRoom(room);
+			while (!handleInput(scanner, player, map.getCurrentRoom(), map)) {
+				displayRoom(map.getCurrentRoom());
+			}
+			System.out.println("Quitting...");
+		}
+		
+		
 		scanner.close();
 	}
 	

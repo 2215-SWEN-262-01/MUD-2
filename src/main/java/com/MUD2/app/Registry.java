@@ -1,6 +1,10 @@
 package com.MUD2.app;
 
-import java.util.*;
+
+
+import java.util.Hashtable;
+
+import com.MUD2.app.tile.Map;
 
 import com.MUD2.app.tile.Map;
 

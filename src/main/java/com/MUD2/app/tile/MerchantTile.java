@@ -100,4 +100,10 @@ public class MerchantTile extends Tile {
     public void setIsOpen(boolean isOpen) {
         this.isOpen = isOpen;
     }
+
+    @Override
+    public String export() {
+        // TODO needs implementation
+        return "";
+    }
 }
