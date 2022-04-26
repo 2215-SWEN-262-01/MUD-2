@@ -1,7 +1,12 @@
 package com.MUD2.app;
 
+import com.MUD2.app.inventory.*;
+import com.MUD2.app.tile.*;
+
 /**
  * The Player character is a game character that is controlled by the client
+ * 
+ * @author Zachary Montgomery
  */
 public class PlayerCharacter extends GameCharacter{
 	public static final int MAX_HEALTH = 100;
@@ -10,12 +15,15 @@ public class PlayerCharacter extends GameCharacter{
 	
 	private Weapon currentWeapon;
 	private Armor currentArmor;
-	
+	private ShrineImprint imprint;
+	private int kills;
 
-	protected PlayerCharacter(String name, String description, Tile tile) {
+	public PlayerCharacter(String name, String description, Tile tile) {
 		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
 		this.currentArmor = null;
 		this.currentWeapon = null;
+		this.imprint = null;
+		this.kills = 0;
 	}
 
 	public void equipWeapon(Weapon weapon) {
@@ -43,12 +51,25 @@ public class PlayerCharacter extends GameCharacter{
 	public Armor getCurrentArmor() {
 		return currentArmor;
 	}
-	
+  
+	public void setShrineImprint(ShrineImprint shrineImprint) {
+		this.imprint = shrineImprint;
+	}
+
 	@Override
 	protected void onDefeat() {
-		this.setDefeated(true);
-		System.out.println("You died! Game over...");
-		return;
+		if (imprint == null) {
+			this.setDefeated(true);
+			System.out.println("You died! Game over...");
+			return;
+		} else {
+			setDefense(imprint.getDefense());
+			setAttack(imprint.getAttack());
+			setCurrentHealth(imprint.getHealth());
+			System.out.println("You were saved by your prayers!");
+			this.imprint = null;
+			return;
+		}
 	}
 
 	@Override

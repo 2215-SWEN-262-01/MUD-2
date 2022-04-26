@@ -7,6 +7,10 @@ import java.io.PrintWriter;
 import java.net.URI;
 import java.util.List;
 
+import com.MUD2.app.tile.Map;
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.userInput.Command;
+
 /**
  * Command for exporting a game file
  * @author Zachary Montgomery

@@ -1,7 +1,12 @@
 package com.MUD2.app;
 
+import com.MUD2.app.inventory.*;
+import com.MUD2.app.tile.*;
+
 /**
  * This abstract class represents an individual game character that can be on the map.
+ * 
+ * @author Zachary Montgomery
  */
 public abstract class GameCharacter {
 	
@@ -62,6 +67,8 @@ public abstract class GameCharacter {
 	public void setDefense(int value) {
 		this.defense = value;
 	}
+
+	public void setCurrentHealth(int value) {this.health = value;}
 	
 	public Tile getCurrentTile() {
         return currentTile;
@@ -124,7 +131,7 @@ public abstract class GameCharacter {
 
 	protected void addItemToInventory(Item item) {
 		for ( Bag checkbag : this.inventory.getBags()) {
-			if (checkbag.getSpace() > 0) {
+			if (checkbag != null && checkbag.getSpace() > 0) {
 				checkbag.addItem(item);
 				break;
 			}
