@@ -2,6 +2,9 @@ package com.MUD2.app;
 
 import java.util.Random;
 
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.userInput.Command;
+
 public class Pray implements Command {
     /**
      * Pray is a command responsible for creating a ShrineImprint of a character when they pray

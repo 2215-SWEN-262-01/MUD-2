@@ -135,4 +135,9 @@ public abstract class GameCharacter {
 			}
 		}
 	}
+
+	public String export() {
+		//TODO needs implementation
+		return null;
+	}
 }
