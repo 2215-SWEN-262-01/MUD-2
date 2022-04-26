@@ -1,9 +1,11 @@
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\Equippable.java
+C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\Registry.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\Bag.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\Item.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\TotalGoldVisitor.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\tile\EmptyTile.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\tile\ExitTile.java
+C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\User.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\userInput\UseItem.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\EquippableVistor.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\SwingWorldDisplay.java
@@ -30,6 +32,7 @@ C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\SwingUserInput.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\tile\ObstacleTile.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\Food.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\GameCharacter.java
+C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\History.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\inventory\StatType.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\SwingInventoryDisplay.java
 C:\Users\jackc\Documents\MUD-2\src\main\java\com\MUD2\app\userInput\Attack.java
