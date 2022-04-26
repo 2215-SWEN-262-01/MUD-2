@@ -6,6 +6,8 @@ import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
+import com.MUD2.app.tile.Map;
+
 import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

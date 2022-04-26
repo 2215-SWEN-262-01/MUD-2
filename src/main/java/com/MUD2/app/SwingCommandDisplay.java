@@ -3,6 +3,14 @@ package com.MUD2.app;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
+import com.MUD2.app.tile.ChestTile;
+import com.MUD2.app.tile.Map;
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.tile.Tile;
+import com.MUD2.app.userInput.Loot;
+import com.MUD2.app.userInput.Move;
+
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;

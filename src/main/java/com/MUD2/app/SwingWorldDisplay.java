@@ -7,6 +7,16 @@ import java.awt.Graphics;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
+import com.MUD2.app.tile.ChestTile;
+import com.MUD2.app.tile.EmptyTile;
+import com.MUD2.app.tile.ExitTile;
+import com.MUD2.app.tile.GoalTile;
+import com.MUD2.app.tile.Map;
+import com.MUD2.app.tile.ObstacleTile;
+import com.MUD2.app.tile.Room;
+import com.MUD2.app.tile.Tile;
+import com.MUD2.app.tile.TrapTile;
+
 public class SwingWorldDisplay extends JPanel {
     private Map map;
     public SwingWorldDisplay(Map map) {
