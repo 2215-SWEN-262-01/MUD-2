@@ -129,7 +129,7 @@ public abstract class GameCharacter {
 	}
 
 
-	protected void addItemToInventory(Item item) {
+	public void addItemToInventory(Item item) {
 		for ( Bag checkbag : this.inventory.getBags()) {
 			if (checkbag != null && checkbag.getSpace() > 0) {
 				checkbag.addItem(item);
