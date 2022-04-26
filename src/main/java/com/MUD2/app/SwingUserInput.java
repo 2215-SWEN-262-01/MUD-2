@@ -60,6 +60,7 @@ public class SwingUserInput extends JFrame implements Runnable {
             this.dispose();
             System.exit(0);
         }
+        this.pack();
         world.repaint();
         
     }
