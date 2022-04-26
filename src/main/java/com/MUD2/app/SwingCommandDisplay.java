@@ -8,6 +8,7 @@ import com.MUD2.app.tile.ChestTile;
 import com.MUD2.app.tile.Map;
 import com.MUD2.app.tile.Room;
 import com.MUD2.app.tile.Tile;
+import com.MUD2.app.userInput.Command;
 import com.MUD2.app.userInput.Loot;
 import com.MUD2.app.userInput.Move;
 
@@ -48,12 +49,17 @@ public class SwingCommandDisplay extends JPanel implements ActionListener {
         loot.setActionCommand("loot");
         loot.setMnemonic(KeyEvent.VK_L);
         this.add(loot);
+        JButton export = new JButton("Export Save");
+        export.setActionCommand("export");
+        export.setMnemonic(KeyEvent.VK_E);
+        this.add(export);
         
         up.addActionListener(this);
         down.addActionListener(this);
         left.addActionListener(this);
         right.addActionListener(this);
         loot.addActionListener(this);
+        export.addActionListener(this);
     }
 
     
@@ -91,6 +97,11 @@ public class SwingCommandDisplay extends JPanel implements ActionListener {
                     System.out.println("No items to loot here...");
                 }
                 break;
+            case "export":
+                Command export = new ExportGame(FileType.CSV, player, room, map);
+                export.execute();
+                System.out.println("Exporting to CSV...");
+                System.exit(0);
         }
     }
 }
