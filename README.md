@@ -10,3 +10,5 @@ Rooms of the map can be decorated with different entities or objects including e
 - Jahmir Hinds
 - Noah Pelletier
 - Jack Ganger-Spivak
+
+Run 'mvn compile exec:java -e' to Play
