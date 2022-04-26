@@ -19,10 +19,12 @@ import java.awt.event.ActionEvent;
 public class SwingCommandDisplay extends JPanel implements ActionListener {
     private PlayerCharacter player;
     private Map map;
+    private SwingInventoryDisplay invDisplay;
 
-    public SwingCommandDisplay(PlayerCharacter player, Map map) {
+    public SwingCommandDisplay(PlayerCharacter player, Map map, SwingInventoryDisplay invDisplay) {
         this.player = player;
         this.map = map;
+        this.invDisplay = invDisplay;
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
         JButton up = new JButton("Up");
@@ -83,6 +85,7 @@ public class SwingCommandDisplay extends JPanel implements ActionListener {
                 if (currentTile instanceof ChestTile) {
                     Loot loot = new Loot(player, ((ChestTile) currentTile).getInventory());
                     loot.execute();
+                    invDisplay.updateInventory();
                     room.convertToEmptyTile(x, y);
                 } else {
                     System.out.println("No items to loot here...");

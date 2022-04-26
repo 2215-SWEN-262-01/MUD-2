@@ -25,8 +25,8 @@ public class SwingUserInput extends JFrame implements Runnable {
         this.map = map;
         this.player = player;
         this.world = new SwingWorldDisplay(map);
-        this.cmd = new SwingCommandDisplay(player, map);
         this.inv = new SwingInventoryDisplay(player);
+        this.cmd = new SwingCommandDisplay(player, map, inv);
         this.log = new JTextArea(5, 30);
         this.add(new JScrollPane(log), BorderLayout.WEST);
         this.add(inv, BorderLayout.EAST);

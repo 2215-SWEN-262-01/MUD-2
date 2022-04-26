@@ -16,11 +16,12 @@ import java.awt.Color;
 public class SwingInventoryDisplay extends JPanel implements ActionListener {
     private PlayerCharacter player;
     private DefaultListModel<Item> invList;
+    private JList<Item> list;
     public SwingInventoryDisplay(PlayerCharacter player) {
         this.player = player;
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         this.invList = new DefaultListModel<>();
-        JList<Item> list = new JList<>();
+        this.list = new JList<>();
         this.add(list);
     }
 
@@ -33,10 +34,17 @@ public class SwingInventoryDisplay extends JPanel implements ActionListener {
     public void updateInventory() {
         Bag[] bags = player.getInventory().getBags();
         for (Bag bag : bags) {
-            for (Item item : bag) {
-                if (!invList.contains(item))
-                    invList.addElement(item);
+            if (bag != null) {
+                for (Item item : bag) {
+                    if (!invList.contains(item)) {
+                        System.out.println("got here");
+                        invList.addElement(item);
+                    } 
+                }
             }
         }
+        
+        list.setSelectedIndex(0);
+        list.ensureIndexIsVisible(0);
     }
 }
