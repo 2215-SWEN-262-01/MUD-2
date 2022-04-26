@@ -3,6 +3,7 @@ package com.MUD2.app.tile;
 import java.util.Scanner;
 
 import com.MUD2.app.GameCharacter;
+import com.MUD2.app.inventory.Bag;
 import com.MUD2.app.inventory.Item;
 
 /**
@@ -46,7 +47,48 @@ public class MerchantTile extends Tile {
     }
 
     public void sell() {
+        Scanner scanner = new Scanner(System.in);
+        Bag[] bags = this.getCharacter().getInventory().getBags();
+        
+        System.out.println("You contain the following Items");
+        
+        for (int i = 0; i < bags.length; i++) {
+			if (bags[i] != null) {
+				System.out.println("Bag " + i + ": " + bags[i].size() + " items");
+				for (Item item : bags[i]) {
+					System.out.print("\t"+item.getName() + ": " + item.getDescription() +
+							", " + item.getGoldValue() +" gold");
+					System.out.println();
+				}
+				System.out.println();
+			}
+		}
 
+        System.out.println("Type the name of the desired item, or 'c' to cancel");
+        String input = scanner.nextLine();
+        scanner.close();
+
+        if (input == "c") {
+            System.out.println("No items sold");
+            return;
+        }
+        else {
+            try {
+                for (int i = 0; i < bags.length; i++) {
+                    if (bags[i] != null) {
+                        Item toSell = bags[i].getItemByName(input);
+                        if (toSell != null) {
+                            bags[i].removeItem(toSell);
+                            System.out.println("Item sold");
+                            return;
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Incorrect input");
+            }
+        }
+        System.out.println("Item not sold");
     }
 
     public Item[] getItems() {
