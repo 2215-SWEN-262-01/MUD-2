@@ -6,6 +6,8 @@ import java.util.Hashtable;
 
 import com.MUD2.app.tile.Map;
 
+import com.MUD2.app.tile.Map;
+
 public class Registry {
     private Hashtable<String, User> users;
     private User activeUser;

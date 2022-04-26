@@ -67,4 +67,25 @@ public class Inventory {
 	public Bag[] getBags() {
 		return bags;
 	}
+	
+	@Override
+	public String toString() {
+		String returnString = "";
+		for(Bag bag : bags) {
+			if(bag != null) {
+				returnString += bag.toString();
+			}
+		}
+		return returnString;
+	}
+
+	public String export() {
+		String returnString = "";
+		for(Bag bag : bags) {
+			if(bag != null) {
+				returnString += bag.export();
+			}
+		}
+		return returnString;
+	}
 }

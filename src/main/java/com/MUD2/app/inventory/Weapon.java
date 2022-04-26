@@ -24,6 +24,11 @@ public class Weapon extends Equippable{
 		playerCharacter.equipWeapon(this);
 	}
 
+	@Override
+	public String export() {
+		String returnString = "Weapon:"+ this.getName() + ":" + getDescription() + ":" + getGoldValue() + ":" + this.attack;
+		return returnString;
+	}
 
 
 

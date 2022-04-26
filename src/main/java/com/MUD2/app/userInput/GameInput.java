@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 import javax.swing.SwingUtilities;
 
+import com.MUD2.app.ExportGame;
+import com.MUD2.app.FileType;
 import com.MUD2.app.NPC;
 import com.MUD2.app.PlayerCharacter;
 import com.MUD2.app.SwingUserInput;
@@ -118,7 +120,8 @@ public class GameInput {
 				System.out.println("\tloot: Add items to inventory");
 				System.out.println("\tinv: Show player inventory");
 				System.out.println("\tuse <item name>: Uses or equips an item");
-				System.out.println("\tstats: Shows player stats\n");
+				System.out.println("\tstats: Shows player stats");
+				System.out.println("\texportgame: exports game to CSV file\n");
 				System.out.println("Map Key: ");
 				System.out.println("\t@: Player");
 				System.out.println("\t_: Empty Space");
@@ -172,6 +175,10 @@ public class GameInput {
 				System.out.println("Attack: " + player.getAttack());
 				System.out.println("Defense: " + player.getDefense());
 				break;
+			case "exportgame":
+				Command export = new ExportGame(FileType.CSV, player, room, map);
+				export.execute();
+				return true;
 		}
 		return false;
 	}

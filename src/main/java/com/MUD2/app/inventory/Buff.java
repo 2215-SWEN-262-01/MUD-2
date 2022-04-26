@@ -14,10 +14,24 @@ public class Buff extends Consumable{
 		super(name, description, goldValue);
 		this.statType = statType;
 	}
+	public String getStatTypeString () {
+		if (this.statType == StatType.HEALTH) {
+			return "HEALTH";
+		} else if (this.statType == StatType.ATTACK) {
+			return "ATTACK";
+		} else {
+			return "DEFENSE";
+		}
 
+	}
 	@Override
 	public void use(GameCharacter character) {
 		
+	}
+	@Override
+	public String export() {
+		String returnString = "Buff:"+ this.getName() + ":" + getDescription() + ":" + getGoldValue() + ":" + getStatTypeString();
+		return returnString;
 	}
 
 }

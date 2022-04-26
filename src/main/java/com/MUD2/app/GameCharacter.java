@@ -81,6 +81,8 @@ public abstract class GameCharacter {
 	public int getHealth() {
 		return this.health;
 	}
+
+	public String getDescription() {return description;}
 	
 	public int getMaxHealth() {
 		return this.MAX_HEALTH;
@@ -127,7 +129,7 @@ public abstract class GameCharacter {
 	}
 
 
-	protected void addItemToInventory(Item item) {
+	public void addItemToInventory(Item item) {
 		for ( Bag checkbag : this.inventory.getBags()) {
 			if (checkbag != null && checkbag.getSpace() > 0) {
 				checkbag.addItem(item);
@@ -138,6 +140,6 @@ public abstract class GameCharacter {
 
 	public String export() {
 		//TODO needs implementation
-		return null;
+		return "";
 	}
 }

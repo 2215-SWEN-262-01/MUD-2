@@ -7,7 +7,8 @@ public class ShrineTile extends Tile {
         super(horizantalLocation, verticalLocation, character);
     }
 
-    public String export () {
+    @Override
+    public String export() {
         if (getCharacter() != null) {
             return "[s:" + getCharacter().export() + "]";
         } else {
