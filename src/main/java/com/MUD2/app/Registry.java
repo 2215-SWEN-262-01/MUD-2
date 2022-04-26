@@ -2,6 +2,8 @@ package com.MUD2.app;
 
 import java.util.*;
 
+import com.MUD2.app.tile.Map;
+
 public class Registry {
     private Hashtable<String, User> users;
     private User activeUser;

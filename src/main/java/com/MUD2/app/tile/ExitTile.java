@@ -29,4 +29,11 @@ public class ExitTile extends Tile{
 
     private Room endRoom;
     private ExitTile otherExit;
+
+    /**
+     * This Method turns a tile into a string that represents a tile for saving purposes
+     */
+    public String export() {
+        return "[x]";
+    }
 }

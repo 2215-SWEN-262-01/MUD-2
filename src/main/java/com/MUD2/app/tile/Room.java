@@ -75,6 +75,9 @@ public class Room {
         tile.setCharacter(character);
         character.setCurrentTile(tile);
     }
+    public String getDescription() {
+        return description;
+    }
 
     public Tile getTile(int x, int y) {
         try {
@@ -101,4 +104,19 @@ public class Room {
 	public int getHeight() {
 		return this.height;
 	}
+
+    public String exportTiles() {
+        String returnstring = "";
+        for (int i = 0; i < tiles.length; i++) {
+            for (int j = 0; i < tiles.length; j++) {
+                returnstring += tiles[i][j].export();
+            }
+        }
+        return returnstring;
+    }
+
+    public String export () {
+        String returnString = " Room:" + getDescription() +":"+ getHeight() +":" + getWidth() + ":" + exportTiles() ;
+        return returnString;
+    }
 }

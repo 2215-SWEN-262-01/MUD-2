@@ -27,4 +27,14 @@ public class Item {
 	public int getGoldValue() {
 		return goldValue;
 	}
+	@Override
+	public String toString() {
+		String returnString = name + " " + description + " " + goldValue;
+		return returnString;
+	}
+
+	public String export() {
+		String returnString = "item:"+ this.getName() + ":" + getDescription() + ":" + getGoldValue();
+		return returnString;
+	}
 }

@@ -1,6 +1,6 @@
 package com.MUD2.app;
 
-import javax.management.Descriptor;
+import com.MUD2.app.tile.Map;
 
 public class User {
     private String username;

@@ -81,6 +81,8 @@ public abstract class GameCharacter {
 	public int getHealth() {
 		return this.health;
 	}
+
+	public String getDescription() {return description;}
 	
 	public int getMaxHealth() {
 		return this.MAX_HEALTH;
@@ -135,4 +137,5 @@ public abstract class GameCharacter {
 			}
 		}
 	}
+	abstract public String export();
 }

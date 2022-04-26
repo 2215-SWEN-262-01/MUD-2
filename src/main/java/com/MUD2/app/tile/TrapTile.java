@@ -21,4 +21,15 @@ public class TrapTile extends Tile {
     public void springTrap() {
         character.takeDamage(this.attackValue);
     }
+
+    /**
+     * This Method turns a tile into a string that represents a tile for saving purposes
+     */
+    public String export() {
+        if (getCharacter() != null) {
+            return "[t:" + attackValue +":" + getCharacter().export() + "]";
+        } else {
+            return "[t] " + attackValue;
+        }
+    }
 }

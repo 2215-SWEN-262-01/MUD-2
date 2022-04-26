@@ -47,4 +47,21 @@ public class Bag implements Iterable<Item> {
 	public int size() {
 		return items.size();
 	}
+	
+	@Override
+	public String toString() {
+		String returnString = "";
+		for(Item item : items) {
+			returnString += item.toString() + ",";
+		}
+		return returnString;
+	}
+
+	public String export() {
+		String returnString = "";
+		for(Item item : items) {
+			returnString += item.export() + "|";
+		}
+		return returnString;
+	}
 }

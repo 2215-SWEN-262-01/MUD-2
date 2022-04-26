@@ -135,7 +135,7 @@ public class Map {
 			}
 			
 			ChestTile chest2 = new ChestTile(5, 1, null, new Inventory());
-			Food steak = new Food("Steak", "Delicious, well cooked steak", 18, 39);
+			Food steak = new Food("Steak", "Delicious well cooked steak", 18, 39);
 			Armor armor = new Armor("Chainmail Armor", "Rare and protective set of armor", 50, 10);
 			Bag chest2_bag = chest2.getInventory().getBags()[0];
 			chest2_bag.addItem(steak);
@@ -204,5 +204,12 @@ public class Map {
 
 	public void setCurrentRoom(Room currentRoom) {
 		this.currentRoom = currentRoom;
+	}
+	public String export () {
+		String returnstring = "Map,";
+		for (int i = 0; i < rooms.length; i++) {
+			returnstring += rooms[i].export() +",";
+		}
+		return returnstring;
 	}
 }
