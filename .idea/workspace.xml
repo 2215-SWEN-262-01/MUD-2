@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy">
-        <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameCharacter.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/GameInput.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Inventory.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Map.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/Move.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/PlayerCharacter.java" afterDir="false" />
-        <change beforePath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/MUD2/app/Inventory.class" afterDir="false" />
+    <list default="true" id="2350534b-9c53-4583-8046-c69487fd75fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/userInput/SwingUserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MUD2/app/SwingUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MUD2/app/SwingUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,35 +26,26 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="inventory" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="25tiGiHqski5KMkzzF2SAgGv8Yn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="28ATiCFC1hkAduyXdwElINT7IIK" />
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.MUD2.app" />
-    </key>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GameInput">
     <configuration name="GameInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.MUD2.app.GameInput" />
       <module name="MUD-2" />
@@ -69,42 +59,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Save" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.MUD2.app.Save" />
+      <module name="MUD-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.MUD2.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MUD-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.MUD2.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.MUD2.app" />
+      <option name="MAIN_CLASS_NAME" value="com.MUD2.app.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameInput" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.Save" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b9990572-6372-4e76-b04b-f9c09a096f1b" name="Changes" comment="Committing project files to keep Git happy" />
-      <created>1646352690680</created>
+      <changelist id="2350534b-9c53-4583-8046-c69487fd75fe" name="Default Changelist" comment="" />
+      <created>1650650292878</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646352690680</updated>
-      <workItem from="1646352691954" duration="4163000" />
-<<<<<<< HEAD
-      <workItem from="1647308006697" duration="7114000" />
-=======
-      <workItem from="1647308006697" duration="7524000" />
-      <workItem from="1647316858571" duration="2076000" />
-      <workItem from="1647482605937" duration="5273000" />
-      <workItem from="1647549509411" duration="1614000" />
->>>>>>> 9f08ca03bcf8c03f19bc053dda7d0d73fb9ce583
+      <updated>1650650292878</updated>
+      <workItem from="1650650297236" duration="1218000" />
+      <workItem from="1650658519837" duration="13879000" />
     </task>
-    <task id="LOCAL-00001" summary="Committing project files to keep Git happy">
-      <created>1647057430515</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647057430515</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -112,61 +119,16 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="UserInput" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="UserInput" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="inventory" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/Tile-System" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Committing project files to keep Git happy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing project files to keep Git happy" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DropItem_java$GameInput.ic" NAME="GameInput Coverage Results" MODIFIED="1650932358219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.MUD2.app.*</FILTER>
+    </SUITE>
   </component>
 </project>
