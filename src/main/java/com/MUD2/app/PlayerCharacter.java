@@ -5,6 +5,8 @@ import com.MUD2.app.tile.*;
 
 /**
  * The Player character is a game character that is controlled by the client
+ * 
+ * @author Zachary Montgomery
  */
 public class PlayerCharacter extends GameCharacter{
 	public static final int MAX_HEALTH = 100;

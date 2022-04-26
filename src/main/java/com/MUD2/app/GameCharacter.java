@@ -5,6 +5,8 @@ import com.MUD2.app.tile.*;
 
 /**
  * This abstract class represents an individual game character that can be on the map.
+ * 
+ * @author Zachary Montgomery
  */
 public abstract class GameCharacter {
 	

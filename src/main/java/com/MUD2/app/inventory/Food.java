@@ -4,6 +4,8 @@ import com.MUD2.app.GameCharacter;
 
 /**
  * Food is an object that when consumed by a player character it restores a certain number of health.
+ * 
+ * @author Zachary Montgomery
  */
 public class Food extends Consumable{
 	private int health;

@@ -6,6 +6,8 @@ import com.MUD2.app.tile.Tile;
 
 /**
  * An NPC is a game character that is not controlled by the client and can attack a player character.
+ * 
+ * @author Zachary Montgomery
  */
 public class NPC extends GameCharacter{
 	private static final Random RNG = new Random();

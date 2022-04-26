@@ -1,5 +1,10 @@
 package com.MUD2.app.inventory;
 
+/**
+ * A visitor for viewing the amount of gold a Character has
+ * 
+ * @author Jack Ganger-Spivak
+ */
 public class TotalGoldVisitor implements InventoryVisitor {
     private int totalGold;
 

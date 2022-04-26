@@ -4,6 +4,8 @@ import com.MUD2.app.PlayerCharacter;
 
 /***
  * The Armor class is responsible for creating an item that can augment the defenses of a player character
+ * 
+ * @author Zachary Montgomery
  */
 public class Armor extends Equippable{
 	private int defense;

@@ -4,6 +4,8 @@ import com.MUD2.app.PlayerCharacter;
 
 /**
  * The Weapon class is responsible for creating an item that can augment the attack of a player character
+ * 
+ * @author Zachary Montgomery
  */
 public class Weapon extends Equippable{
 	private int attack;

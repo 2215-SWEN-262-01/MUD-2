@@ -1,5 +1,10 @@
 package com.MUD2.app.inventory;
 
+/**
+ * An Item is an abstract object to be used by Characters
+ * 
+ * @author Zachary Montgomery
+ */
 public class Item {
 	private String name;
 	private String description;

@@ -8,6 +8,8 @@ import java.util.List;
 
 /**
  * A map is a collection of rooms that the client will be able to play on.
+ * 
+ * @author Jack Ganger-Spivak
  */
 public class Map {
 	

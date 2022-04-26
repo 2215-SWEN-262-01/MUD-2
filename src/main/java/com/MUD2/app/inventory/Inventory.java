@@ -1,5 +1,10 @@
 package com.MUD2.app.inventory;
 
+/**
+ * An Inventory contains Bags which contain Items
+ * 
+ * @author Zachary Montgomery
+ */
 public class Inventory {
 	
 	private Bag[] bags;
