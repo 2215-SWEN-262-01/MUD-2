@@ -50,6 +50,15 @@ public class Inventory {
 		return visitor.getEquippableItems();
 	}
 
+	public int getItemCount () {
+		int itemcount = 0;
+		for(Bag bag : this.bags) {
+			if(bag != null) {
+				itemcount += bag.size();
+			}
+		}
+		return itemcount;
+	}
 	public Bag[] getBags() {
 		return bags;
 	}

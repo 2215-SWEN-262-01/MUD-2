@@ -10,12 +10,13 @@ public class PlayerCharacter extends GameCharacter{
 	
 	private Weapon currentWeapon;
 	private Armor currentArmor;
-	
+	private int kills;
 
 	protected PlayerCharacter(String name, String description, Tile tile) {
 		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
 		this.currentArmor = null;
 		this.currentWeapon = null;
+		this.kills = 0;
 	}
 
 	public void equipWeapon(Weapon weapon) {
@@ -43,7 +44,9 @@ public class PlayerCharacter extends GameCharacter{
 	public Armor getCurrentArmor() {
 		return currentArmor;
 	}
-	
+
+
+
 	@Override
 	protected void onDefeat() {
 		this.setDefeated(true);
