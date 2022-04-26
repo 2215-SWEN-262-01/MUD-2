@@ -39,8 +39,9 @@ public class ExportGame implements Command {
 			PrintWriter writer;
 			try {
 				writer = new PrintWriter(file);
+
 				
-				writer.write(player.getInventory().toString());
+				writer.write(map.export());
 				
 				
 				writer.close();
