@@ -15,12 +15,14 @@ public class PlayerCharacter extends GameCharacter{
 	
 	private Weapon currentWeapon;
 	private Armor currentArmor;
+	private ShrineImprint imprint;
 	private int kills;
 
 	public PlayerCharacter(String name, String description, Tile tile) {
 		super(name, description, MAX_HEALTH, DEFAULT_ATTACK, DEFAULT_DEFENSE, tile);
 		this.currentArmor = null;
 		this.currentWeapon = null;
+		this.imprint = null;
 		this.kills = 0;
 	}
 
@@ -49,14 +51,25 @@ public class PlayerCharacter extends GameCharacter{
 	public Armor getCurrentArmor() {
 		return currentArmor;
 	}
-
-
+  
+	public void setShrineImprint(ShrineImprint shrineImprint) {
+		this.imprint = shrineImprint;
+	}
 
 	@Override
 	protected void onDefeat() {
-		this.setDefeated(true);
-		System.out.println("You died! Game over...");
-		return;
+		if (imprint == null) {
+			this.setDefeated(true);
+			System.out.println("You died! Game over...");
+			return;
+		} else {
+			setDefense(imprint.getDefense());
+			setAttack(imprint.getAttack());
+			setCurrentHealth(imprint.getHealth());
+			System.out.println("You were saved by your prayers!");
+			this.imprint = null;
+			return;
+		}
 	}
 
 }
